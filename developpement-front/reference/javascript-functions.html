@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 函数速查表</title>
+    <link rel="stylesheet" href="../assets/lesson.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Reference</div>
+        <h1>JavaScript 函数速查表</h1>
+        <p class="lede">函数是 React 函数组件和事件回调的基础。</p>
+      </header>
+
+      <section>
+        <h2>普通函数</h2>
+        <pre><code>function greet(name) {
+  return `Hello, ${name}`;
+}
+
+greet("Ada");</code></pre>
+      </section>
+
+      <section>
+        <h2>箭头函数</h2>
+        <pre><code>const add = (a, b) => a + b;
+const double = number => number * 2;</code></pre>
+        <p>单个参数可以省略括号；多个参数需要括号。使用大括号时，通常要明确写 <code>return</code>。</p>
+      </section>
+
+      <section>
+        <h2>函数组成</h2>
+        <table>
+          <thead>
+            <tr><th>部分</th><th>作用</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>函数名</td><td>标识并调用函数</td></tr>
+            <tr><td>参数</td><td>接收外部数据</td></tr>
+            <tr><td>函数体</td><td>描述执行逻辑</td></tr>
+            <tr><td><code>return</code></td><td>返回计算结果</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p><a href="../lessons/0002-javascript-functions.html">返回第 2 课</a></p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第 2 课：JavaScript 函数</title>
+    <link rel="stylesheet" href="../assets/lesson.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Lesson 02 · JavaScript foundation</div>
+        <h1>函数：把行为封装起来</h1>
+        <p class="lede">React 的组件本质上是函数。先学会函数，再理解组件为什么这样写。</p>
+      </header>
+
+      <section>
+        <h2>本课目标</h2>
+        <ul>
+          <li>定义并调用函数。</li>
+          <li>理解参数和返回值。</li>
+          <li>读懂箭头函数，初步理解回调函数。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>1. 定义函数与调用函数</h2>
+        <p>函数是一段可以重复执行的代码。定义函数只是描述它要做什么；调用函数才会真正执行它。</p>
+        <pre><code>function greet(name) {
+  return "Hello, " + name;
+}
+
+const message = greet("Ada");
+console.log(message); // "Hello, Ada"</code></pre>
+        <table>
+          <thead>
+            <tr><th>代码部分</th><th>含义</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>function greet</code></td><td>定义一个名为 <code>greet</code> 的函数</td></tr>
+            <tr><td><code>name</code></td><td>参数，函数接收的数据</td></tr>
+            <tr><td><code>return</code></td><td>把结果交还给调用者</td></tr>
+            <tr><td><code>greet("Ada")</code></td><td>调用函数并传入参数</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>2. 参数和返回值</h2>
+        <p>参数让同一个函数处理不同的数据；返回值让函数的结果可以被保存、显示或继续计算。</p>
+        <pre><code>function add(a, b) {
+  return a + b;
+}
+
+const total = add(3, 4);
+console.log(total); // 7</code></pre>
+        <p>这里的 <code>a</code> 和 <code>b</code> 是参数，<code>3</code> 和 <code>4</code> 是调用时传入的实参。</p>
+        <div class="callout"><strong>Java 对照：</strong>Java 方法中的参数和 <code>return</code> 与这里的概念相似，但 JavaScript 函数不要求提前声明返回类型。</div>
+      </section>
+
+      <section>
+        <h2>3. 箭头函数</h2>
+        <p>箭头函数是更紧凑的函数写法。React 课程中会经常看到它，尤其是事件处理和数组处理。</p>
+        <pre><code>function double(number) {
+  return number * 2;
+}
+
+const doubleAgain = (number) => {
+  return number * 2;
+};
+
+const doubleShort = (number) => number * 2;</code></pre>
+        <p>当函数体只有一个表达式时，可以省略大括号和 <code>return</code>。如果写了大括号，就要明确写出 <code>return</code>。</p>
+        <pre><code>const add = (a, b) => a + b;
+console.log(add(2, 5)); // 7</code></pre>
+      </section>
+
+      <section>
+        <h2>4. 函数也可以作为数据</h2>
+        <p>JavaScript 可以把函数放进变量、作为参数传给另一个函数。这种被传入的函数叫回调函数。</p>
+        <pre><code>function execute(operation) {
+  return operation(3);
+}
+
+const result = execute((number) => number * 2);
+console.log(result); // 6</code></pre>
+        <p>React 的 <code>onClick</code>、数组的 <code>map</code> 和很多 Hook 都会用到这种“把函数交给别人稍后调用”的模式。</p>
+      </section>
+
+      <section>
+        <h2>5. JavaScript 函数与 React 的连接</h2>
+        <pre><code>function Welcome() {
+  return "欢迎学习 React";
+}</code></pre>
+        <p>现在它只是一个返回字符串的普通 JavaScript 函数。下一阶段把返回值换成 JSX，它就会成为一个最简单的 React 函数组件。</p>
+      </section>
+
+      <section class="quiz">
+        <h2>6. 小测验</h2>
+        <p>先预测，再选择。全部正确后，完成课后练习。</p>
+
+        <h3>问题 1：哪一行真正调用了函数？</h3>
+        <pre><code>function greet(name) {
+  return "Hi " + name;
+}
+
+greet("Ada");</code></pre>
+        <label><input type="radio" name="q1" value="a" /> A. 函数定义</label>
+        <label><input type="radio" name="q1" value="b" /> B. 函数调用</label>
+
+        <h3>问题 2：下面代码返回什么？</h3>
+        <pre><code>const add = (a, b) => a + b;
+add(2, 3);</code></pre>
+        <label><input type="radio" name="q2" value="a" /> A. 返回数字 5</label>
+        <label><input type="radio" name="q2" value="b" /> B. 返回数字 23</label>
+
+        <h3>问题 3：箭头函数的结果是什么？</h3>
+        <pre><code>const double = (number) => number * 2;
+double(4);</code></pre>
+        <label><input type="radio" name="q3" value="a" /> A. 返回数字 8</label>
+        <label><input type="radio" name="q3" value="b" /> B. 返回数字 6</label>
+
+        <button type="button" id="check">检查答案</button>
+        <p class="result" id="result" aria-live="polite"></p>
+      </section>
+
+      <section>
+        <h2>课后练习</h2>
+        <p>在浏览器 Console 中完成：</p>
+        <ol>
+          <li>编写一个 <code>isAdult(age)</code> 函数。</li>
+          <li>当年龄大于或等于 18 时返回 <code>true</code>，否则返回 <code>false</code>。</li>
+          <li>使用普通函数写法和箭头函数各实现一次。</li>
+          <li>分别测试 <code>17</code> 和 <code>20</code>。</li>
+        </ol>
+      </section>
+
+      <footer>
+        <p>主要参考：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">MDN Functions</a>。</p>
+        <p>完成练习后，把两种函数写法和测试结果发给老师；有任何不懂的地方都可以直接提问。</p>
+        <p><a href="../reference/javascript-functions.html">打开 JavaScript 函数速查表</a></p>
+        <p><a href="0001-javascript-variables-and-types.html">返回第 1 课</a></p>
+      </footer>
+    </main>
+
+    <script>
+      document.querySelector("#check").addEventListener("click", () => {
+        const answers = {
+          q1: "b",
+          q2: "a",
+          q3: "a",
+        };
+        const correct = Object.entries(answers).every(([question, answer]) => {
+          return document.querySelector(`input[name="${question}"]:checked`)?.value === answer;
+        });
+        const result = document.querySelector("#result");
+        result.textContent = correct ? "全部正确，可以继续下一课。" : "还有答案需要检查，再试一次。";
+        result.className = `result ${correct ? "success" : "error"}`;
+      });
+    </script>
+  </body>
+</html>

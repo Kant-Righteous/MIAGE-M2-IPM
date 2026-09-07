@@ -8,6 +8,10 @@
   用于核对 `const` 的声明、重新赋值限制和块级作用域。
 - [MDN：let declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
   用于核对 `let` 的重新赋值和块级作用域行为。
+- [MDN：Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+  解释函数定义、参数、返回值、调用和函数作用域，是理解 React 函数组件的前置资料。
+- [MDN：Arrow function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+  用于学习 React 中经常出现的箭头函数和回调函数写法。
 - [React：Your First Component](https://react.dev/learn/your-first-component)
   后续 React 入门阶段使用，解释函数组件、JSX 和组件组合。
 - [React：Passing Props to a Component](https://react.dev/learn/passing-props-to-a-component)
