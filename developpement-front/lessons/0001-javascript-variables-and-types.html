@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第 1 课：JavaScript 变量与数据类型</title>
+    <link rel="stylesheet" href="../assets/lesson.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Lesson 01 · JavaScript foundation</div>
+        <h1>变量与数据类型</h1>
+        <p class="lede">先学会 JavaScript 的基本词汇，再进入 JSX 和 React。</p>
+      </header>
+
+      <section>
+        <h2>本课目标</h2>
+        <ul>
+          <li>区分 <code>const</code> 和 <code>let</code>。</li>
+          <li>识别字符串、数字、布尔值、<code>undefined</code> 和对象。</li>
+          <li>看懂 JavaScript 变量声明，为后续 JSX 做准备。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>1. 变量是什么</h2>
+        <p>变量是一个名字，用来指向程序正在使用的值。Java 中常见的声明是“类型 + 名称”；JavaScript 通常不在变量前写类型。</p>
+        <pre><code>String name = "Ada"; // Java
+
+const name = "Ada"; // JavaScript</code></pre>
+        <p>JavaScript 是动态类型语言：变量声明时通常不写类型，运行时才确定当前值的类型。</p>
+      </section>
+
+      <section>
+        <h2>2. <code>const</code> 和 <code>let</code></h2>
+        <pre><code>const course = "React";
+let lesson = 1;
+
+lesson = 2;       // 可以重新赋值
+// course = "Vue"; // TypeError：不能重新赋值</code></pre>
+        <table>
+          <thead>
+            <tr>
+              <th>关键字</th>
+              <th>能否重新赋值</th>
+              <th>初学阶段的建议</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>const</code></td>
+              <td>不能</td>
+              <td>默认优先使用</td>
+            </tr>
+            <tr>
+              <td><code>let</code></td>
+              <td>可以</td>
+              <td>值确实需要变化时使用</td>
+            </tr>
+            <tr>
+              <td><code>var</code></td>
+              <td>可以</td>
+              <td>暂不使用，后续解释历史原因</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout"><strong>重要：</strong><code>const</code> 限制的是变量重新指向另一个值，不等于对象内部完全不可修改。React 中我们会进一步学习为什么通常要创建新对象。</div>
+      </section>
+
+      <section>
+        <h2>3. 常见数据类型</h2>
+        <pre><code>const studentName = "Ada"; // String：文本
+const age = 20;             // Number：数字
+const isStudent = true;     // Boolean：真或假
+let futureJob;              // undefined：还没有赋值
+const student = {           // Object：一组相关数据
+  name: "Ada",
+  age: 20,
+};</code></pre>
+        <p>字符串必须使用引号；数字不使用引号。<code>"20"</code> 是文本，<code>20</code> 才是数字。</p>
+        <pre><code>const textAge = "20";
+const numericAge = 20;
+
+console.log(typeof textAge);    // "string"
+console.log(typeof numericAge); // "number"</code></pre>
+      </section>
+
+      <section>
+        <h2>4. Java 对照</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Java</th>
+              <th>JavaScript</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>String name = "Ada";</code></td>
+              <td><code>const name = "Ada";</code></td>
+            </tr>
+            <tr>
+              <td><code>int age = 20;</code></td>
+              <td><code>const age = 20;</code></td>
+            </tr>
+            <tr>
+              <td><code>boolean active = true;</code></td>
+              <td><code>const active = true;</code></td>
+            </tr>
+            <tr>
+              <td><code>Person person = new Person();</code></td>
+              <td><code>const person = { name: "Ada" };</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="quiz">
+        <h2>5. 小测验</h2>
+        <p>先在脑中预测结果，再选择答案。全部答对后，再进入下一课。</p>
+
+        <h3>问题 1：下面代码输出什么？</h3>
+        <pre><code>const age = 20;
+console.log(typeof age);</code></pre>
+        <label><input type="radio" name="q1" value="a" /> <code>"number"</code></label>
+        <label><input type="radio" name="q1" value="b" /> <code>"string"</code></label>
+
+        <h3>问题 2：哪个变量可以重新赋值？</h3>
+        <label><input type="radio" name="q2" value="a" /> <code>const score = 10;</code></label>
+        <label><input type="radio" name="q2" value="b" /> <code>let score = 10;</code></label>
+
+        <h3>问题 3：下面哪个是对象？</h3>
+        <label><input type="radio" name="q3" value="a" /> <code>"Ada"</code></label>
+        <label><input type="radio" name="q3" value="b" /> <code>{ name: "Ada" }</code></label>
+
+        <button type="button" id="check">检查答案</button>
+        <p class="result" id="result" aria-live="polite"></p>
+      </section>
+
+      <section>
+        <h2>课后练习</h2>
+        <p>在浏览器开发者工具的 Console 中完成：</p>
+        <ol>
+          <li>声明一个表示你姓名的变量。</li>
+          <li>声明一个表示你年龄的变量。</li>
+          <li>声明一个表示“是否正在学习 JavaScript”的布尔变量。</li>
+          <li>使用 <code>console.log()</code> 输出这三个变量。</li>
+        </ol>
+      </section>
+
+      <footer>
+        <p>主要参考：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types">MDN Grammar and types</a>。</p>
+        <p>完成练习后，把你的代码和测验答案发给老师；有任何不懂的地方都可以直接提问。</p>
+        <p><a href="../reference/javascript-basics.html">打开 JavaScript 基础速查表</a></p>
+      </footer>
+    </main>
+
+    <script>
+      document.querySelector("#check").addEventListener("click", () => {
+        const answers = {
+          q1: "a",
+          q2: "b",
+          q3: "b",
+        };
+        const correct = Object.entries(answers).every(([question, answer]) => {
+          return document.querySelector(`input[name="${question}"]:checked`)?.value === answer;
+        });
+        const result = document.querySelector("#result");
+        result.textContent = correct ? "全部正确，可以继续下一课。" : "还有答案需要检查，再试一次。";
+        result.className = `result ${correct ? "success" : "error"}`;
+      });
+    </script>
+  </body>
+</html>

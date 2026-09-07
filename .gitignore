@@ -30,7 +30,6 @@ dist/
 Thumbs.db
 Desktop.ini
 
-# Docling and temporary local files
-.docling/
+# Temporary local files
 *.tmp
 *.temp

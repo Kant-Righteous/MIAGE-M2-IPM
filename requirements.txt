@@ -1,2 +1,1 @@
-docling>=2.117.0,<3
-pydantic>=2.13,<3
+markitdown[pdf,pptx,docx,xlsx,xls]>=0.1.7,<0.2
