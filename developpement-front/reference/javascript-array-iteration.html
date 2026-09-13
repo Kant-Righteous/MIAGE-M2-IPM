@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 数组遍历速查表</title>
+    <link rel="stylesheet" href="../assets/lesson.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Reference</div>
+        <h1>数组遍历与转换速查表</h1>
+        <p class="lede">处理 React 列表数据时最常用的三个工具。</p>
+      </header>
+
+      <section>
+        <h2><code>for...of</code></h2>
+        <pre><code>for (const item of items) {
+  console.log(item);
+}</code></pre>
+        <p>逐个读取元素，不自动生成新数组。</p>
+      </section>
+
+      <section>
+        <h2><code>map()</code></h2>
+        <pre><code>const result = items.map((item) => {
+  return transform(item);
+});</code></pre>
+        <p>转换每一项，返回新数组。</p>
+      </section>
+
+      <section>
+        <h2><code>filter()</code></h2>
+        <pre><code>const result = items.filter((item) => {
+  return condition(item);
+});</code></pre>
+        <p>保留回调函数返回 <code>true</code> 的元素，返回新数组。</p>
+      </section>
+
+      <section>
+        <h2>选择方法</h2>
+        <table>
+          <thead>
+            <tr><th>需求</th><th>选择</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>逐个执行操作</td><td><code>for...of</code></td></tr>
+            <tr><td>每项变成新值</td><td><code>map()</code></td></tr>
+            <tr><td>只保留符合条件的项</td><td><code>filter()</code></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p><a href="../lessons/0004-javascript-array-iteration.html">返回第 4 课</a></p>
+      </footer>
+    </main>
+  </body>
+</html>

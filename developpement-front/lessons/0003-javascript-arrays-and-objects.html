@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第 3 课：JavaScript 数组与对象</title>
+    <link rel="stylesheet" href="../assets/lesson.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Lesson 03 · JavaScript foundation</div>
+        <h1>数组与对象</h1>
+        <p class="lede">React 页面展示的数据，通常就来自数组和对象。</p>
+      </header>
+
+      <section>
+        <h2>本课目标</h2>
+        <ul>
+          <li>创建数组，并通过索引读取数据。</li>
+          <li>创建对象，并通过属性读取和修改数据。</li>
+          <li>理解数组、对象和嵌套数据的关系。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>1. 数组：一组有顺序的数据</h2>
+        <p>数组适合保存多个相关值。数组的第一个元素索引是 <code>0</code>，不是 <code>1</code>。</p>
+        <pre><code>const hobbies = ["Reading", "Traveling", "Gaming"];
+
+console.log(hobbies[0]); // "Reading"
+console.log(hobbies[1]); // "Traveling"
+console.log(hobbies.length); // 3</code></pre>
+        <table>
+          <thead>
+            <tr><th>写法</th><th>含义</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>hobbies[0]</code></td><td>读取第一个元素</td></tr>
+            <tr><td><code>hobbies[2]</code></td><td>读取第三个元素</td></tr>
+            <tr><td><code>hobbies.length</code></td><td>读取元素数量</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>2. 修改数组</h2>
+        <p>数组是对象的一种。即使数组变量使用 <code>const</code>，也可以修改数组内部的元素。</p>
+        <pre><code>const skills = ["Java", "HTML"];
+
+skills[1] = "JavaScript";
+skills.push("React");
+
+console.log(skills); // ["Java", "JavaScript", "React"]</code></pre>
+        <div class="callout"><strong>区分两件事：</strong><code>const</code> 不允许变量重新指向另一个数组，但允许修改当前数组的内容。React 中更新状态时通常会使用“创建新数组”的方式，后面会专门学习。</div>
+      </section>
+
+      <section>
+        <h2>3. 对象：描述一个实体</h2>
+        <p>对象适合保存一个实体的多个属性。它和 Java 的对象都能表达“一个实体拥有多个数据”，但 JavaScript 可以直接使用对象字面量，不必先定义类。</p>
+        <pre><code>const user = {
+  name: "John Doe",
+  age: 40,
+  email: "john.doe@gmail.com",
+};
+
+console.log(user.name);  // "John Doe"
+console.log(user.age);   // 40
+console.log(user.email); // "john.doe@gmail.com"</code></pre>
+        <p>最常用的是点号写法：<code>user.name</code>。也可以使用方括号写法：<code>user["name"]</code>。</p>
+      </section>
+
+      <section>
+        <h2>4. 修改对象属性</h2>
+        <pre><code>const user = {
+  name: "John Doe",
+  age: 40,
+};
+
+user.age = 41;
+user.email = "john@example.com";
+
+console.log(user);</code></pre>
+        <p>可以修改已有属性，也可以添加新属性。这个灵活性很方便，但在 React 状态管理中不能随意直接修改对象，后面会学习安全的更新方式。</p>
+      </section>
+
+      <section>
+        <h2>5. 嵌套数据</h2>
+        <p>真实应用的数据通常会嵌套：一个对象可以包含数组，一个数组也可以包含多个对象。</p>
+        <pre><code>const user = {
+  name: "John Doe",
+  age: 40,
+  hobbies: ["Reading", "Traveling", "Gaming"],
+};
+
+console.log(user.hobbies[0]); // "Reading"
+
+const products = [
+  { name: "Keyboard", price: 49 },
+  { name: "Mouse", price: 25 },
+];
+
+console.log(products[0].name); // "Keyboard"
+console.log(products[1].price); // 25</code></pre>
+        <p>这正是课程第一个用户卡片练习的数据形状：用户是对象，爱好是对象内部的数组。</p>
+      </section>
+
+      <section>
+        <h2>6. Java 对照</h2>
+        <table>
+          <thead>
+            <tr><th>Java</th><th>JavaScript</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>List&lt;String&gt;</code></td><td><code>["Java", "React"]</code></td></tr>
+            <tr><td><code>person.getName()</code></td><td><code>person.name</code></td></tr>
+            <tr><td><code>new Person(...)</code></td><td><code>{ name: "Ada", age: 20 }</code></td></tr>
+            <tr><td><code>list.get(0)</code></td><td><code>list[0]</code></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="quiz">
+        <h2>7. 小测验</h2>
+        <p>先预测，再选择。注意数组从索引 <code>0</code> 开始。</p>
+
+        <h3>问题 1：输出什么？</h3>
+        <pre><code>const fruits = ["Apple", "Banana"];
+fruits[0];</code></pre>
+        <label><input type="radio" name="q1" value="a" /> A. Apple</label>
+        <label><input type="radio" name="q1" value="b" /> B. Banana</label>
+
+        <h3>问题 2：输出什么？</h3>
+        <pre><code>const user = { name: "Ada", age: 20 };
+user.age;</code></pre>
+        <label><input type="radio" name="q2" value="a" /> A. Ada</label>
+        <label><input type="radio" name="q2" value="b" /> B. 20</label>
+
+        <h3>问题 3：数组长度是多少？</h3>
+        <pre><code>const numbers = [10, 20, 30];
+numbers.length;</code></pre>
+        <label><input type="radio" name="q3" value="a" /> A. 2</label>
+        <label><input type="radio" name="q3" value="b" /> B. 3</label>
+
+        <button type="button" id="check">检查答案</button>
+        <p class="result" id="result" aria-live="polite"></p>
+      </section>
+
+      <section>
+        <h2>课后练习</h2>
+        <p>请模仿课程中的用户数据，创建一个对象：</p>
+        <pre><code>const user = {
+  name: "你的名字",
+  age: 你的年龄,
+  email: "你的邮箱",
+  hobbies: ["爱好一", "爱好二", "爱好三"],
+};</code></pre>
+        <ol>
+          <li>输出用户姓名。</li>
+          <li>输出用户的第一个爱好。</li>
+          <li>修改用户年龄。</li>
+          <li>添加一个 <code>isStudent</code> 属性。</li>
+        </ol>
+      </section>
+
+      <footer>
+        <p>主要参考：<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Arrays">MDN Arrays</a> 和 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects">MDN Working with objects</a>。</p>
+        <p>完成练习后，把对象代码、输出结果和测验答案发给老师；有任何不懂的地方都可以直接提问。</p>
+        <p><a href="../reference/javascript-arrays-and-objects.html">打开数组与对象速查表</a></p>
+        <p><a href="0002-javascript-functions.html">返回第 2 课</a></p>
+        <p><a href="0004-javascript-array-iteration.html">进入第 4 课：数组遍历与转换</a></p>
+      </footer>
+    </main>
+
+    <script>
+      document.querySelector("#check").addEventListener("click", () => {
+        const answers = {
+          q1: "a",
+          q2: "b",
+          q3: "b",
+        };
+        const correct = Object.entries(answers).every(([question, answer]) => {
+          return document.querySelector(`input[name="${question}"]:checked`)?.value === answer;
+        });
+        const result = document.querySelector("#result");
+        result.textContent = correct ? "全部正确，可以继续下一课。" : "还有答案需要检查，再试一次。";
+        result.className = `result ${correct ? "success" : "error"}`;
+      });
+    </script>
+  </body>
+</html>
