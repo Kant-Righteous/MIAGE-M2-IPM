@@ -5,7 +5,7 @@ const possibleStates = Object.freeze({
     enabled: { 
       springEnabled: false,
       summerEnabled: true,
-      autumnEnabled: false,
+      fallEnabled: false,
       winterEnabled: false
     }
   },
@@ -13,15 +13,15 @@ const possibleStates = Object.freeze({
     enabled: { 
       springEnabled: false,
       summerEnabled: false,
-      autumnEnabled: true,
+      fallEnabled: true,
       winterEnabled: false
     }
   },
-  AUTUMN: { value: 3,
+  FALL: { value: 3,
     enabled: { 
       springEnabled: false,
       summerEnabled: false,
-      autumnEnabled: false,
+      fallEnabled: false,
       winterEnabled: true
     }
   },
@@ -29,7 +29,7 @@ const possibleStates = Object.freeze({
     enabled: { 
       springEnabled: true, 
       summerEnabled: false,
-      autumnEnabled: false,
+      fallEnabled: false,
       winterEnabled: false
     }
   },
@@ -37,7 +37,7 @@ const possibleStates = Object.freeze({
     enabled: { 
       springEnabled: false,
       summerEnabled: false,
-      autumnEnabled: false,
+      fallEnabled: false,
       winterEnabled: false
     }
   }
@@ -58,9 +58,9 @@ export default function useFourSeasonsBehaviour() {
     setCurrentSeason(possibleStates.SUMMER);
   }
 
-  const toAutumn = () => {
-    setDisplayedSeason("Autumn");
-    setCurrentSeason(possibleStates.AUTUMN);
+  const toFall = () => {
+    setDisplayedSeason("Fall");
+    setCurrentSeason(possibleStates.FALL);
   }
 
   const toWinter = () => {
@@ -68,5 +68,5 @@ export default function useFourSeasonsBehaviour() {
     setCurrentSeason(possibleStates.WINTER);
   }
 
-  return [displayedSeason, currentSeason, toSpring, toSummer, toAutumn, toWinter];
+  return [displayedSeason, currentSeason, toSpring, toSummer, toFall, toWinter];
 }

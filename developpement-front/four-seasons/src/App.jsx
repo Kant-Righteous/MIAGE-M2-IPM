@@ -3,7 +3,7 @@ import Label from "./components/Label";
 import useFourSeasonsBehaviour from "./hooks/useFourSeasonsBehaviour";
 
 function App() {
-  const [displayedSeason, currentSeason, toSpring, toSummer, toAutumn, toWinter] = useFourSeasonsBehaviour();
+  const [displayedSeason, currentSeason, toSpring, toSummer, toFall, toWinter] = useFourSeasonsBehaviour();
 
   return (
     <>
@@ -31,9 +31,9 @@ function App() {
         <Row>
           <Button
             text="to Fall"
-            enabled={currentSeason.enabled.autumnEnabled}
+            enabled={currentSeason.enabled.fallEnabled}
             onClick={() => {
-              toAutumn();
+              toFall();
             }}
           />
           <Button
