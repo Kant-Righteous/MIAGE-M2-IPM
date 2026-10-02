@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+
 const possibleState = {
   IDLE: {
     value: 1,
@@ -25,6 +26,7 @@ const possibleState = {
     },
   },
 };
+
 export default function useCountBehaviour() {
   const [display, setDisplay] = useState("Bonjour");
   const [state, setState] = useState(possibleState.IDLE);
@@ -37,7 +39,9 @@ export default function useCountBehaviour() {
   };
 
   const nRef = useRef(n);
-  nRef.current = n;
+  useEffect(() => {
+    nRef.current = n;
+  }, [n]);
 
   useEffect(() => {
     switch (toDisplay) {
