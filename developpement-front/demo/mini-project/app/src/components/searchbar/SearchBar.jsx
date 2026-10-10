@@ -1,6 +1,13 @@
-function SearchBar({ categories, selectedCategory, onCategoryChange }) {
+function SearchBar({ categories, selectedCategory, onCategoryChange, searchName, onNameChange }) {
   return (
     <div>
+      <label htmlFor="name-filter">Nom</label>
+      <input
+        id="name-filter"
+        type="search"
+        value={searchName}
+        onChange={(event) => onNameChange(event.target.value)}
+      />
       <label htmlFor="category-filter">Catégorie</label>
       <select
         id="category-filter"

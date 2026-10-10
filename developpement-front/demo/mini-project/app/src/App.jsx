@@ -10,8 +10,9 @@ import './App.css'
 function App() {
   const [orders] = useState([])
   const [selectedCategory, setSelectedCategory] = useState('')
+  const [searchName, setSearchName] = useState('')
   const categoryStats = getCategoryStats(products)
-  const filteredProducts = filterProducts(products, { category: selectedCategory })
+  const filteredProducts = filterProducts(products, { category: selectedCategory, name: searchName })
 
   return (
     <>
@@ -31,6 +32,8 @@ function App() {
               categories={Object.keys(categoryStats)}
               selectedCategory={selectedCategory}
               onCategoryChange={setSelectedCategory}
+              searchName={searchName}
+              onNameChange={setSearchName}
             />
           }
         />
