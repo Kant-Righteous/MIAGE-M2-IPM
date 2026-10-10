@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import products from './model/products.json'
+import { filterProducts } from './model/filterProducts.js'
 import { getCategoryStats } from './model/productStats.jsx'
 import HomePage from './pages/HomePage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
@@ -8,7 +9,9 @@ import './App.css'
 
 function App() {
   const [orders] = useState([])
+  const [selectedCategory, setSelectedCategory] = useState('')
   const categoryStats = getCategoryStats(products)
+  const filteredProducts = filterProducts(products, { category: selectedCategory })
 
   return (
     <>
@@ -20,7 +23,17 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<HomePage categoryStats={categoryStats} orderCount={orders.length} />} />
-        <Route path="/products" element={<ProductsPage products={products} />} />
+        <Route
+          path="/products"
+          element={
+            <ProductsPage
+              products={filteredProducts}
+              categories={Object.keys(categoryStats)}
+              selectedCategory={selectedCategory}
+              onCategoryChange={setSelectedCategory}
+            />
+          }
+        />
       </Routes>
     </>
   )
