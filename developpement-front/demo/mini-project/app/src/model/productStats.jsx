@@ -13,5 +13,9 @@ export function getCategoryStats(products) {
         totals[category].totalStock += product.quantity;
     }
 
+    for (const stats of Object.values(totals)) {
+        stats.averageStock = stats.totalStock / stats.productCount;
+    }
+
     return totals;
 }
