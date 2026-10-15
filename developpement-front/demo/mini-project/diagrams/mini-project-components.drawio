@@ -751,7 +751,7 @@
         <mxCell id="row" value="&lt;b style=&quot;font-size:21px&quot;&gt;RowProduct&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:14px;color:#555555&quot;&gt;«React · &amp;lt;tr&amp;gt; / &amp;lt;td&amp;gt;»&lt;/span&gt;" vertex="1" parent="table" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
           <mxGeometry x="70" y="75" width="280" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="map" value="products.map" vertex="1" parent="table" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+        <mxCell id="products-map-adapter" value="products.map" vertex="1" parent="table" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;container=1;collapsible=0;recursiveResize=0;connectable=0;">
           <mxGeometry x="120" y="215" width="120" height="26" as="geometry" />
         </mxCell>
         <mxCell id="map-caption" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
@@ -802,7 +802,7 @@
         <mxCell id="wire-3" value="" edge="1" source="parent-products" target="table-products" parent="1" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;dashed=1;jettySize=16;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="map-input" value="" vertex="1" parent="map" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=south;">
+        <mxCell id="map-input" value="" vertex="1" parent="products-map-adapter" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=south;">
           <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
             <mxPoint x="59.0" y="25.0" as="offset" />
           </mxGeometry>
@@ -810,7 +810,7 @@
         <mxCell id="wire-4" value="" edge="1" source="table-products" target="map-input" parent="1" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;dashed=0;jettySize=16;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="map-output" value="" vertex="1" parent="map" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=north;">
+        <mxCell id="map-output" value="" vertex="1" parent="products-map-adapter" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=north;">
           <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
             <mxPoint x="59.0" y="-1.0" as="offset" />
           </mxGeometry>
