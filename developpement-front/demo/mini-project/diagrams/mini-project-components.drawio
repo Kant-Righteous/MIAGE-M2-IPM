@@ -473,7 +473,7 @@
         <mxCell id="product-model" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Product Model&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商品模型&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;productModel · module / 模块&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
           <mxGeometry x="120" y="1100" width="300" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="store" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Shop Store&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商店数据仓库&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;ShopStore · class / 类&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+        <mxCell id="store" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Shop Store&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商店数据仓库&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;ShopStore · Singleton / 单例&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
           <mxGeometry x="750" y="1100" width="370" height="100" as="geometry" />
         </mxCell>
         <mxCell id="command" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Place Order Command&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;下单命令&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;PlaceOrderCommand · class / 类&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
@@ -543,8 +543,8 @@
         <mxCell id="wire-36" value="" edge="1" source="snapshot-receptacle" target="snapshot-required-anchor" parent="1" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;dashed=0;jettySize=16;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="snapshot-name" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;subscribe(observer)&lt;br&gt;getSnapshot()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px&quot;&gt;订阅变化 · 读取快照&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=16;fontStyle=0;fontColor=#111111;">
-          <mxGeometry x="600" y="1009.5" width="240" height="59" as="geometry" />
+        <mxCell id="snapshot-name" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:13px&quot;&gt;ShopStore.getInstance()&lt;br&gt;subscribe(observer)&lt;br&gt;getSnapshot()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;获取单例 · 订阅与快照&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=16;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="600" y="990" width="240" height="84" as="geometry" />
         </mxCell>
         <mxCell id="store-notify-source-anchor" value="" vertex="1" parent="store" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=north;">
           <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
@@ -1137,17 +1137,17 @@
         <mxCell id="customer" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Customer Input&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;客户信息输入&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;input&amp;gt; ×3&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="page" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
           <mxGeometry x="60" y="85" width="300" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="items" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Product &amp;amp; Quantity Input&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商品与数量输入&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;select&amp;gt; + &amp;lt;input&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="page" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+        <mxCell id="items" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Product &amp;amp; Quantity Input&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商品与数量输入&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;select&amp;gt; + &amp;lt;input&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;input: min=1 · step=1 · required&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="page" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
           <mxGeometry x="60" y="440" width="300" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="feedback" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Order Feedback Label&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;订单反馈标签&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;p&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="page" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
-          <mxGeometry x="1380" y="85" width="280" height="95" as="geometry" />
+        <mxCell id="feedback" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Order Feedback Label&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;订单反馈标签&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;p&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="ports-feedback-condition" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="200" y="30" width="280" height="95" as="geometry" />
         </mxCell>
         <mxCell id="add" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Add Product Button&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;添加商品按钮&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;button&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="page" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
           <mxGeometry x="1380" y="365" width="280" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="remove" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Remove Product Button&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;移除商品按钮&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;button&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="page" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
-          <mxGeometry x="1380" y="540" width="280" height="75" as="geometry" />
+        <mxCell id="remove" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Remove Product Button&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;移除商品按钮&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;button&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="ports-remove-condition" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="30" y="30" width="280" height="75" as="geometry" />
         </mxCell>
         <mxCell id="submit" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Order Form &amp;amp; Submit Button&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;订单表单与提交按钮&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准控件 · &amp;lt;form&amp;gt; / &amp;lt;button&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="page" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
           <mxGeometry x="60" y="715" width="300" height="95" as="geometry" />
@@ -1245,7 +1245,7 @@
           <mxGeometry x="360" y="622" width="150" height="26" as="geometry" />
         </mxCell>
         <mxCell id="items-adapter-caption" value="adapter / 适配器" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;fontSize=13;">
-          <mxGeometry x="430" y="879" width="130" height="22" as="geometry" />
+          <mxGeometry x="405" y="867" width="140" height="22" as="geometry" />
         </mxCell>
         <mxCell id="items-data-provided-anchor" value="" vertex="1" parent="controller" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=west;">
           <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
@@ -1457,11 +1457,11 @@
         <mxCell id="remove-onclick" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;onClick&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px&quot;&gt;点击&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=16;fontStyle=0;fontColor=#111111;">
           <mxGeometry x="1335" y="752" width="105" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="feedback-bind" value="message / 文案" vertex="1" parent="page" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;container=1;collapsible=0;recursiveResize=0;connectable=0;">
-          <mxGeometry x="1230" y="119" width="115" height="26" as="geometry" />
+        <mxCell id="feedback-bind" value="message / 文案" vertex="1" parent="ports-feedback-condition" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;fontSize=14;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="50" y="60" width="115" height="34" as="geometry" />
         </mxCell>
         <mxCell id="feedback-bind-caption" value="adapter / 适配器" vertex="1" parent="feedback-bind" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;fontSize=13;">
-          <mxGeometry x="-7.5" y="-26" width="130" height="22" as="geometry" />
+          <mxGeometry x="-60" y="-26" width="130" height="22" as="geometry" />
         </mxCell>
         <mxCell id="feedback-data-provided-anchor" value="" vertex="1" parent="controller" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=north;">
           <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
@@ -1470,7 +1470,7 @@
         </mxCell>
         <mxCell id="feedback-data-required-anchor" value="" vertex="1" parent="feedback-bind" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=west;">
           <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
-            <mxPoint x="-1.0" y="12.0" as="offset" />
+            <mxPoint x="-1.0" y="16" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="feedback-data-facet" value="" vertex="1" parent="controller" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;portConstraint=west;">
@@ -1480,7 +1480,7 @@
         </mxCell>
         <mxCell id="feedback-data-receptacle" value="" vertex="1" parent="feedback-bind" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;portConstraint=east;">
           <mxGeometry x="0" y="0" width="12" height="24" as="geometry" relative="1">
-            <mxPoint x="-92" y="1" as="offset" />
+            <mxPoint x="-92" y="5" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wire-25" value="" edge="1" source="feedback-data-provided-anchor" target="feedback-data-facet" parent="1" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;dashed=0;jettySize=16;">
@@ -1494,7 +1494,7 @@
         </mxCell>
         <mxCell id="feedback-data-adapter-output" value="" vertex="1" parent="feedback-bind" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=east;">
           <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
-            <mxPoint x="114.0" y="12.0" as="offset" />
+            <mxPoint x="114.0" y="16" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="feedback-data-attribute" value="" vertex="1" parent="feedback" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
@@ -1707,11 +1707,198 @@
         <mxCell id="wire-44" value="" edge="1" source="submit-callback-receptacle" target="submit-callback-required-anchor" parent="1" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;dashed=0;jettySize=16;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="submit-callback-name" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;execute(draft) = onPlaceOrder(draft)&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px&quot;&gt;执行订单 · 调用下单接口&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=16;fontStyle=0;fontColor=#111111;">
-          <mxGeometry x="1140" y="1278" width="500" height="42" as="geometry" />
+        <mxCell id="submit-callback-name" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:13px&quot;&gt;handlePlaceOrder = onPlaceOrder = execute&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;callback binding / 回调绑定 · (draft) → result&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=16;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1140" y="1274" width="500" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="footer" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;Repeated controls are grouped by type. Input events reach the Controller. Orders return synchronously; React receives state notifications.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px&quot;&gt;重复控件按类型归并。输入事件进入控制器；下单同步返回结果，React 接收状态变化通知。&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=14;fontStyle=0;fontColor=#666666;">
+        <mxCell id="footer" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:13px&quot;&gt;Controls are grouped by type. Dashed boxes show JSX conditions; dashed lines delegate props. Orders return synchronously; React receives state notifications.&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;控件按类型归并。虚线框表示 JSX 条件渲染，虚线表示属性委托；下单同步返回结果，React 接收状态变化通知。&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=14;fontStyle=0;fontColor=#666666;">
           <mxGeometry x="40" y="1322" width="1760" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-feedback-condition" parent="page" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;rounded=0;strokeColor=#A7A7A7;strokeWidth=1;fillColor=none;dashed=1;dashPattern=6 4;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1180" y="55" width="500" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-feedback-condition-title" parent="ports-feedback-condition" vertex="1" value="feedback &amp;amp;&amp;amp; (…) / 有反馈时渲染" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=12;">
+          <mxGeometry x="200" y="3" width="280" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-feedback-products" parent="feedback-bind" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="84" y="-6" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-feedback-products-wire" parent="1" edge="1" source="products-prop" target="ports-feedback-products" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;dashed=1;dashPattern=5 4;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="244" />
+              <mxPoint x="1380" y="244" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ports-feedback-products-label" parent="1" vertex="1" value="products / 商品列表" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=13;">
+          <mxGeometry x="1180" y="258" width="175" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-adapter" parent="page" vertex="1" value="&lt;div style=&quot;line-height:1.15;font-size:13px&quot;&gt;products.find(...)&lt;br&gt;selectedProduct?.quantity&lt;/div&gt;" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="370" width="300" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-caption" parent="1" vertex="1" value="adapter / 适配器" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;align=center;fontSize=13;">
+          <mxGeometry x="120" y="562" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-products" parent="ports-stock-adapter" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="-6" y="16" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-products-wire" parent="1" edge="1" source="products-prop" target="ports-stock-products" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;dashed=1;dashPattern=5 4;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="280" />
+              <mxPoint x="90" y="280" />
+              <mxPoint x="90" y="612" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ports-stock-products-label" parent="1" vertex="1" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:13px&quot;&gt;products&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;商品列表&lt;/span&gt;&lt;/div&gt;" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;">
+          <mxGeometry x="100" y="455" width="130" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-items-provided" parent="controller" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="-1" y="179" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-items-required" parent="ports-stock-adapter" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="299" y="29" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-items-facet" parent="controller" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="-194" y="172" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-items-receptacle" parent="ports-stock-adapter" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="400" y="18" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-items-provider-wire" parent="1" edge="1" source="ports-stock-items-provided" target="ports-stock-items-facet" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=1;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-items-assembly" parent="1" edge="1" source="ports-stock-items-facet" target="ports-stock-items-receptacle" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=none;opacity=0;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-items-consumer-wire" parent="1" edge="1" source="ports-stock-items-receptacle" target="ports-stock-items-required" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=0;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-items-label" parent="1" vertex="1" value="items / 订单行列表" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=13;">
+          <mxGeometry x="430" y="585" width="150" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-stock-output" parent="ports-stock-adapter" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="289" y="43" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-quantity-max" parent="items" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="284" y="-6" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-quantity-max-wire" parent="1" edge="1" source="ports-stock-output" target="ports-quantity-max" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-quantity-max-label" parent="1" vertex="1" value="max / 库存上限" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=13;">
+          <mxGeometry x="425" y="637" width="160" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-disabled-adapter" parent="page" vertex="1" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:13px&quot;&gt;availableProducts.length === 0&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;无可用商品&lt;/span&gt;&lt;/div&gt;" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="660" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-disabled-caption" parent="1" vertex="1" value="adapter / 适配器" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;align=center;fontSize=13;">
+          <mxGeometry x="120" y="856" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-available-provided" parent="controller" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="-1" y="459" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-available-required" parent="ports-submit-disabled-adapter" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="299" y="19" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-available-facet" parent="controller" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="-254" y="452" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-available-receptacle" parent="ports-submit-disabled-adapter" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="340" y="8" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-available-provider-wire" parent="1" edge="1" source="ports-submit-available-provided" target="ports-submit-available-facet" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=1;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-available-assembly" parent="1" edge="1" source="ports-submit-available-facet" target="ports-submit-available-receptacle" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=none;opacity=0;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-available-consumer-wire" parent="1" edge="1" source="ports-submit-available-receptacle" target="ports-submit-available-required" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=0;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-available-label" parent="1" vertex="1" value="availableProducts / 可选项" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=13;">
+          <mxGeometry x="540" y="870" width="175" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-disabled-output" parent="ports-submit-disabled-adapter" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="-1" y="27" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-disabled" parent="submit" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="-6" y="39" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-submit-disabled-wire" parent="1" edge="1" source="ports-submit-disabled-output" target="ports-submit-disabled" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="908" />
+              <mxPoint x="90" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ports-submit-disabled-label" parent="1" vertex="1" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:13px&quot;&gt;disabled&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px&quot;&gt;禁用&lt;/span&gt;&lt;/div&gt;" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;align=right;">
+          <mxGeometry x="40" y="987" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-condition" parent="page" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;rounded=0;strokeColor=#A7A7A7;strokeWidth=1;fillColor=none;dashed=1;dashPattern=6 4;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1350" y="510" width="330" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-condition-title" parent="ports-remove-condition" vertex="1" value="items.length &amp;gt; 1 &amp;amp;&amp;amp; (…) / 多行时渲染" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=12;">
+          <mxGeometry x="10" y="4" width="310" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-items-provided" parent="controller" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="399" y="309" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-items-required" parent="ports-remove-condition" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="-1" y="19" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-items-facet" parent="controller" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="588" y="302" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-items-receptacle" parent="ports-remove-condition" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="-92" y="8" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-items-provider-wire" parent="1" edge="1" source="ports-remove-items-provided" target="ports-remove-items-facet" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-items-assembly" parent="1" edge="1" source="ports-remove-items-facet" target="ports-remove-items-receptacle" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=none;opacity=0;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-items-consumer-wire" parent="1" edge="1" source="ports-remove-items-receptacle" target="ports-remove-items-required" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-remove-items-label" parent="1" vertex="1" value="items / 订单行" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=13;">
+          <mxGeometry x="1138" y="724" width="180" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-condition" parent="page" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;rounded=0;strokeColor=#A7A7A7;strokeWidth=1;fillColor=none;dashed=1;dashPattern=6 4;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1350" y="630" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-condition-title" parent="ports-empty-condition" vertex="1" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:12px&quot;&gt;availableProducts.length === 0 &amp;amp;&amp;amp; (…)&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;JSX conditional / JSX 条件渲染&lt;/span&gt;&lt;/div&gt;" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;">
+          <mxGeometry x="10" y="4" width="310" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-label" parent="ports-empty-condition" vertex="1" value="&lt;div style=&quot;line-height:1.1&quot;&gt;&lt;b style=&quot;font-size:18px&quot;&gt;No Products Label&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:14px&quot;&gt;无商品提示 · &amp;lt;p&amp;gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;container=1;collapsible=0;recursiveResize=0;connectable=0;spacing=4;">
+          <mxGeometry x="30" y="40" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-available-provided" parent="controller" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="399" y="434" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-available-required" parent="ports-empty-condition" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="-1" y="24" width="2" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-available-facet" parent="controller" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="508" y="427" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-available-receptacle" parent="ports-empty-condition" vertex="1" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="-172" y="13" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-available-provider-wire" parent="1" edge="1" source="ports-empty-available-provided" target="ports-empty-available-facet" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-available-assembly" parent="1" edge="1" source="ports-empty-available-facet" target="ports-empty-available-receptacle" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=none;opacity=0;exitX=0.5;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-available-consumer-wire" parent="1" edge="1" source="ports-empty-available-receptacle" target="ports-empty-available-required" value="" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;exitX=1;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.5;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ports-empty-available-label" parent="1" vertex="1" value="availableProducts / 可选项" style="html=1;fontFamily=Microsoft YaHei;fontSize=14;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=13;">
+          <mxGeometry x="1138" y="838" width="180" height="22" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
