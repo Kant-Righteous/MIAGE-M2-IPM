@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import initialProducts from './model/products.json'
+import { placeOrder } from './model/orderModel.js'
 import { filterProducts, getCategoryStats } from './model/productModel.js'
 import HomePage from './pages/HomePage.jsx'
 import OrdersPage from './pages/OrdersPage.jsx'
@@ -8,8 +9,8 @@ import ProductsPage from './pages/ProductsPage.jsx'
 import './App.css'
 
 function App() {
-  const [products] = useState(initialProducts)
-  const [orders] = useState([])
+  const [products, setProducts] = useState(initialProducts)
+  const [orders, setOrders] = useState([])
   const [filters, setFilters] = useState({
     category: '',
     name: '',
@@ -25,6 +26,15 @@ function App() {
 
   const handleFilterChange = (field, value) => {
     setFilters((current) => ({ ...current, [field]: value }))
+  }
+
+  const handlePlaceOrder = (draft) => {
+    const result = placeOrder(products, draft)
+    if (result.valid) {
+      setProducts(result.products)
+      setOrders((current) => [...current, result.order])
+    }
+    return result
   }
 
   return (
@@ -49,7 +59,7 @@ function App() {
             />
           }
         />
-        <Route path="/orders" element={<OrdersPage products={products} />} />
+        <Route path="/orders" element={<OrdersPage products={products} onPlaceOrder={handlePlaceOrder} />} />
       </Routes>
     </>
   )

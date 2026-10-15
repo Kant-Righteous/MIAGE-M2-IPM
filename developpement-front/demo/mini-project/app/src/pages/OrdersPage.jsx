@@ -1,25 +1,81 @@
 import { useState } from 'react'
 
-function OrdersPage({ products }) {
+function getOrderErrorMessage(result, products) {
+  switch (result.reason) {
+    case 'invalid-customer':
+      return 'Renseignez votre nom et votre prénom.'
+    case 'invalid-email':
+      return 'Saisissez une adresse e-mail valide.'
+    case 'empty-order':
+      return 'Ajoutez au moins un produit.'
+    case 'invalid-quantity':
+      return 'Saisissez une quantité entière supérieure à zéro.'
+    case 'unknown-product':
+      return 'Sélectionnez un produit disponible.'
+    case 'duplicate-product':
+      return 'Chaque produit ne peut être sélectionné qu’une fois.'
+    case 'insufficient-stock': {
+      const product = products.find(({ id }) => id === result.productId)
+      return `Stock insuffisant pour ${product?.name ?? 'ce produit'} : ${result.available} disponible(s).`
+    }
+    default:
+      return 'La commande n’a pas pu être enregistrée.'
+  }
+}
+
+function OrdersPage({ products, onPlaceOrder }) {
   const [customer, setCustomer] = useState({ lastName: '', firstName: '', email: '' })
   const [items, setItems] = useState([{ productId: '', quantity: 1 }])
+  const [feedback, setFeedback] = useState(null)
   const availableProducts = products.filter((product) => product.quantity > 0)
   const selectedProductIds = new Set(items.map((item) => item.productId))
 
   const updateCustomer = (field, value) => {
     setCustomer((current) => ({ ...current, [field]: value }))
+    setFeedback(null)
   }
 
   const updateItem = (index, field, value) => {
-    setItems((current) => current.map((item, itemIndex) => (
-      itemIndex === index ? { ...item, [field]: value } : item
-    )))
+    setItems((current) => current.map((item, itemIndex) => {
+      if (itemIndex !== index) return item
+      return field === 'productId'
+        ? { ...item, productId: value, quantity: 1 }
+        : { ...item, [field]: value }
+    }))
+    setFeedback(null)
+  }
+
+  const addItem = () => {
+    setItems((current) => [...current, { productId: '', quantity: 1 }])
+    setFeedback(null)
+  }
+
+  const removeItem = (index) => {
+    setItems((current) => current.filter((_, itemIndex) => itemIndex !== index))
+    setFeedback(null)
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const result = onPlaceOrder({
+      ...customer,
+      items: items.map(({ productId, quantity }) => ({ productId, quantity: Number(quantity) })),
+    })
+
+    if (!result.valid) {
+      setFeedback({ type: 'error', message: getOrderErrorMessage(result, products) })
+      return
+    }
+
+    setCustomer({ lastName: '', firstName: '', email: '' })
+    setItems([{ productId: '', quantity: 1 }])
+    setFeedback({ type: 'success', message: 'Commande enregistrée.' })
   }
 
   return (
     <main>
       <h1>Commande</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="last-name">Nom</label>
           <input
@@ -88,7 +144,7 @@ function OrdersPage({ products }) {
                   required
                 />
                 {items.length > 1 && (
-                  <button type="button" onClick={() => setItems((current) => current.filter((_, itemIndex) => itemIndex !== index))}>
+                  <button type="button" onClick={() => removeItem(index)}>
                     Retirer
                   </button>
                 )}
@@ -97,12 +153,17 @@ function OrdersPage({ products }) {
           })}
           <button
             type="button"
-            onClick={() => setItems((current) => [...current, { productId: '', quantity: 1 }])}
+            onClick={addItem}
             disabled={items.length >= availableProducts.length}
           >
             Ajouter un produit
           </button>
         </fieldset>
+        {availableProducts.length === 0 && <p>Aucun produit disponible.</p>}
+        <button type="submit" disabled={availableProducts.length === 0}>
+          Valider la commande
+        </button>
+        {feedback && <p role={feedback.type === 'error' ? 'alert' : 'status'}>{feedback.message}</p>}
       </form>
     </main>
   )

@@ -52,3 +52,36 @@ export function deductOrderStock(products, items) {
     }),
   }
 }
+
+export function placeOrder(products, draft) {
+  if (!draft || typeof draft.lastName !== 'string' || typeof draft.firstName !== 'string') {
+    return { valid: false, reason: 'invalid-customer' }
+  }
+
+  const lastName = draft.lastName.trim()
+  const firstName = draft.firstName.trim()
+  if (!lastName || !firstName) {
+    return { valid: false, reason: 'invalid-customer' }
+  }
+
+  const email = typeof draft.email === 'string' ? draft.email.trim() : ''
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return { valid: false, reason: 'invalid-email' }
+  }
+
+  const stockResult = deductOrderStock(products, draft.items)
+  if (!stockResult.valid) {
+    return stockResult
+  }
+
+  return {
+    valid: true,
+    products: stockResult.products,
+    order: {
+      lastName,
+      firstName,
+      email,
+      items: draft.items.map(({ productId, quantity }) => ({ productId, quantity })),
+    },
+  }
+}
