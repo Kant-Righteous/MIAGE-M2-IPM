@@ -75,95 +75,109 @@ function OrdersPage({ products, onPlaceOrder }) {
   return (
     <main>
       <h1>Commande</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="last-name">Nom</label>
-          <input
-            id="last-name"
-            name="lastName"
-            value={customer.lastName}
-            onChange={(event) => updateCustomer('lastName', event.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="first-name">Prénom</label>
-          <input
-            id="first-name"
-            name="firstName"
-            value={customer.firstName}
-            onChange={(event) => updateCustomer('firstName', event.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="email">E-mail</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            value={customer.email}
-            onChange={(event) => updateCustomer('email', event.target.value)}
-            required
-          />
-        </div>
-        <fieldset>
-          <legend>Produits</legend>
-          {items.map((item, index) => {
-            const selectedProduct = products.find((product) => product.id === item.productId)
+      <form className="order-form" onSubmit={handleSubmit}>
+        <section className="order-customer" aria-labelledby="customer-heading">
+          <h2 id="customer-heading">Coordonnées</h2>
+          <div className="order-field">
+            <label htmlFor="last-name">Nom</label>
+            <input
+              id="last-name"
+              name="lastName"
+              autoComplete="family-name"
+              value={customer.lastName}
+              onChange={(event) => updateCustomer('lastName', event.target.value)}
+              required
+            />
+          </div>
+          <div className="order-field">
+            <label htmlFor="first-name">Prénom</label>
+            <input
+              id="first-name"
+              name="firstName"
+              autoComplete="given-name"
+              value={customer.firstName}
+              onChange={(event) => updateCustomer('firstName', event.target.value)}
+              required
+            />
+          </div>
+          <div className="order-field">
+            <label htmlFor="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              value={customer.email}
+              onChange={(event) => updateCustomer('email', event.target.value)}
+              required
+            />
+          </div>
+        </section>
+        <div className="order-details">
+          <section className="order-products" aria-labelledby="products-heading">
+            <h2 id="products-heading">Produits</h2>
+            {items.map((item, index) => {
+              const selectedProduct = products.find((product) => product.id === item.productId)
 
-            return (
-              <div key={index}>
-                <label htmlFor={`product-${index}`}>Produit {index + 1}</label>
-                <select
-                  id={`product-${index}`}
-                  value={item.productId}
-                  onChange={(event) => updateItem(index, 'productId', event.target.value)}
-                  required
-                >
-                  <option value="">Choisir un produit</option>
-                  {availableProducts.map((product) => (
-                    <option
-                      key={product.id}
-                      value={product.id}
-                      disabled={selectedProductIds.has(product.id) && product.id !== item.productId}
+              return (
+                <div className="order-item" key={index}>
+                  <div className="order-field">
+                    <label htmlFor={`product-${index}`}>Produit {index + 1}</label>
+                    <select
+                      id={`product-${index}`}
+                      value={item.productId}
+                      onChange={(event) => updateItem(index, 'productId', event.target.value)}
+                      required
                     >
-                      {product.name} ({product.quantity} disponibles)
-                    </option>
-                  ))}
-                </select>
-                <label htmlFor={`quantity-${index}`}>Quantité</label>
-                <input
-                  id={`quantity-${index}`}
-                  type="number"
-                  min="1"
-                  max={selectedProduct?.quantity}
-                  step="1"
-                  value={item.quantity}
-                  onChange={(event) => updateItem(index, 'quantity', event.target.value)}
-                  required
-                />
-                {items.length > 1 && (
-                  <button type="button" onClick={() => removeItem(index)}>
-                    Retirer
-                  </button>
-                )}
-              </div>
-            )
-          })}
-          <button
-            type="button"
-            onClick={addItem}
-            disabled={items.length >= availableProducts.length}
-          >
-            Ajouter un produit
-          </button>
-        </fieldset>
-        {availableProducts.length === 0 && <p>Aucun produit disponible.</p>}
-        <button type="submit" disabled={availableProducts.length === 0}>
-          Valider la commande
-        </button>
-        {feedback && <p role={feedback.type === 'error' ? 'alert' : 'status'}>{feedback.message}</p>}
+                      <option value="">Choisir un produit</option>
+                      {availableProducts.map((product) => (
+                        <option
+                          key={product.id}
+                          value={product.id}
+                          disabled={selectedProductIds.has(product.id) && product.id !== item.productId}
+                        >
+                          {product.name} ({product.quantity} disponibles)
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="order-field">
+                    <label htmlFor={`quantity-${index}`}>Quantité</label>
+                    <input
+                      id={`quantity-${index}`}
+                      type="number"
+                      min="1"
+                      max={selectedProduct?.quantity}
+                      step="1"
+                      value={item.quantity}
+                      onChange={(event) => updateItem(index, 'quantity', event.target.value)}
+                      required
+                    />
+                  </div>
+                  {items.length > 1 && (
+                    <button type="button" onClick={() => removeItem(index)}>
+                      Retirer
+                    </button>
+                  )}
+                </div>
+              )
+            })}
+            <button
+              type="button"
+              onClick={addItem}
+              disabled={items.length >= availableProducts.length}
+            >
+              Ajouter un produit
+            </button>
+          </section>
+          {availableProducts.length === 0 && <p>Aucun produit disponible.</p>}
+          <div className="order-actions">
+            <button type="submit" disabled={availableProducts.length === 0}>
+              Valider la commande
+            </button>
+          </div>
+          {feedback && <p role={feedback.type === 'error' ? 'alert' : 'status'}>{feedback.message}</p>}
+        </div>
       </form>
     </main>
   )
