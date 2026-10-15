@@ -373,7 +373,7 @@ button:disabled {
 
 .order-item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 90px;
+  grid-template-columns: minmax(0, 1fr) 90px 40px;
   gap: 12px;
   align-items: end;
   padding-bottom: 20px;
@@ -382,10 +382,19 @@ button:disabled {
 }
 
 .order-item > button {
-  grid-column: 1 / -1;
-  justify-self: end;
-  padding: 4px 8px;
-  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 44px;
+  padding: 0;
+  border-color: transparent;
+  background: transparent;
+}
+
+.order-item > button:hover:not(:disabled) {
+  color: #b91c1c;
+  background: #fee2e2;
 }
 
 .order-products > button {

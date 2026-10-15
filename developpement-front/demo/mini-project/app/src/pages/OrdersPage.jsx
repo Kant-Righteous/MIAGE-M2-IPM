@@ -155,8 +155,16 @@ function OrdersPage({ products, onPlaceOrder }) {
                     />
                   </div>
                   {items.length > 1 && (
-                    <button type="button" onClick={() => removeItem(index)}>
-                      Retirer
+                    <button
+                      type="button"
+                      onClick={() => removeItem(index)}
+                      aria-label={`Retirer le produit ${index + 1}`}
+                      title={`Retirer le produit ${index + 1}`}
+                    >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M3 6h18M9 6V4h6v2" />
+                        <path d="m5 6 1 14h12l1-14M10 10v6M14 10v6" />
+                      </svg>
                     </button>
                   )}
                 </div>
