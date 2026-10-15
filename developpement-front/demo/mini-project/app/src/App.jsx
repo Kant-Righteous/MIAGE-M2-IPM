@@ -8,7 +8,14 @@ import './App.css'
 
 function App() {
   const [orders] = useState([])
-  const [filters, setFilters] = useState({ category: '', name: '', minPrice: '', maxPrice: '' })
+  const [filters, setFilters] = useState({
+    category: '',
+    name: '',
+    minPrice: '',
+    maxPrice: '',
+    minQuantity: '',
+    maxQuantity: '',
+  })
   const categoryStats = getCategoryStats(products)
   const filteredProducts = filterProducts(products, filters)
 

@@ -23,15 +23,26 @@ export function isLowStock(product) {
   return product.quantity < product.restockThreshold
 }
 
-export function filterProducts(products, { category, name = '', minPrice = '', maxPrice = '' }) {
+export function filterProducts(products, {
+  category,
+  name = '',
+  minPrice = '',
+  maxPrice = '',
+  minQuantity = '',
+  maxQuantity = '',
+}) {
   const searchName = name.trim().toLocaleLowerCase()
   const minimumPrice = minPrice === '' ? null : Number(minPrice)
   const maximumPrice = maxPrice === '' ? null : Number(maxPrice)
+  const minimumQuantity = minQuantity === '' ? null : Number(minQuantity)
+  const maximumQuantity = maxQuantity === '' ? null : Number(maxQuantity)
 
   return products.filter((product) =>
     (!category || product.category === category) &&
     product.name.toLocaleLowerCase().includes(searchName) &&
     (minimumPrice === null || product.price >= minimumPrice) &&
-    (maximumPrice === null || product.price <= maximumPrice)
+    (maximumPrice === null || product.price <= maximumPrice) &&
+    (minimumQuantity === null || product.quantity >= minimumQuantity) &&
+    (maximumQuantity === null || product.quantity <= maximumQuantity)
   )
 }

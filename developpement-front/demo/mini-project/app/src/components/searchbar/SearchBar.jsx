@@ -37,6 +37,24 @@ function SearchBar({ categories, filters, onFilterChange }) {
         value={filters.maxPrice}
         onChange={(event) => onFilterChange('maxPrice', event.target.value)}
       />
+      <label htmlFor="min-quantity-filter">Stock min</label>
+      <input
+        id="min-quantity-filter"
+        type="number"
+        min="0"
+        step="1"
+        value={filters.minQuantity}
+        onChange={(event) => onFilterChange('minQuantity', event.target.value)}
+      />
+      <label htmlFor="max-quantity-filter">Stock max</label>
+      <input
+        id="max-quantity-filter"
+        type="number"
+        min="0"
+        step="1"
+        value={filters.maxQuantity}
+        onChange={(event) => onFilterChange('maxQuantity', event.target.value)}
+      />
     </div>
   )
 }
