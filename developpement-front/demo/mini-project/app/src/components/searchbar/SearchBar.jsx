@@ -1,6 +1,6 @@
 function SearchBar({ categories, filters, onFilterChange }) {
   return (
-    <div>
+    <div className="product-filters">
       <label htmlFor="name-filter">Nom</label>
       <input
         id="name-filter"
