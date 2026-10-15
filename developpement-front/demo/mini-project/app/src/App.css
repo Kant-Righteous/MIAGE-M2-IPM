@@ -333,7 +333,7 @@ button:disabled {
 
 form {
   display: grid;
-  max-width: 760px;
+  width: 100%;
   gap: 20px;
 }
 
