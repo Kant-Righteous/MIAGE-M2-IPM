@@ -1,16 +1,14 @@
 import SearchBar from '../components/searchbar/SearchBar.jsx'
 import TableProduct from '../components/product/TableProduct.jsx'
 
-function ProductsPage({ products, categories, selectedCategory, onCategoryChange, searchName, onNameChange }) {
+function ProductsPage({ products, categories, filters, onFilterChange }) {
   return (
     <main>
       <h1>Produits</h1>
       <SearchBar
         categories={categories}
-        selectedCategory={selectedCategory}
-        onCategoryChange={onCategoryChange}
-        searchName={searchName}
-        onNameChange={onNameChange}
+        filters={filters}
+        onFilterChange={onFilterChange}
       />
       <TableProduct products={products} />
     </main>

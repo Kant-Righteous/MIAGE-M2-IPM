@@ -9,10 +9,13 @@ import './App.css'
 
 function App() {
   const [orders] = useState([])
-  const [selectedCategory, setSelectedCategory] = useState('')
-  const [searchName, setSearchName] = useState('')
+  const [filters, setFilters] = useState({ category: '', name: '', minPrice: '', maxPrice: '' })
   const categoryStats = getCategoryStats(products)
-  const filteredProducts = filterProducts(products, { category: selectedCategory, name: searchName })
+  const filteredProducts = filterProducts(products, filters)
+
+  const handleFilterChange = (field, value) => {
+    setFilters((current) => ({ ...current, [field]: value }))
+  }
 
   return (
     <>
@@ -30,10 +33,8 @@ function App() {
             <ProductsPage
               products={filteredProducts}
               categories={Object.keys(categoryStats)}
-              selectedCategory={selectedCategory}
-              onCategoryChange={setSelectedCategory}
-              searchName={searchName}
-              onNameChange={setSearchName}
+              filters={filters}
+              onFilterChange={handleFilterChange}
             />
           }
         />
