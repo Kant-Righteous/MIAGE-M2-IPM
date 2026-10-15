@@ -1,4 +1,4 @@
-import { isLowStock } from '../../model/productStock.js'
+import { isLowStock } from '../../model/productModel.js'
 
 function RowProduct({ product }) {
   return (
