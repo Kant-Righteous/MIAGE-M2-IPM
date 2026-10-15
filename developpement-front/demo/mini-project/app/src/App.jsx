@@ -1,12 +1,25 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
-import products from './model/products.json'
+import initialProducts from './model/products.json'
+import backupProducts from './model/products-backup.json'
 import { filterProducts, getCategoryStats } from './model/productModel.js'
 import HomePage from './pages/HomePage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
 import './App.css'
 
+const PRODUCTS_STORAGE_KEY = 'mini-project-products-v1'
+
+function loadProducts() {
+  try {
+    const savedProducts = JSON.parse(localStorage.getItem(PRODUCTS_STORAGE_KEY))
+    return Array.isArray(savedProducts) ? savedProducts : initialProducts
+  } catch {
+    return initialProducts
+  }
+}
+
 function App() {
+  const [products, setProducts] = useState(loadProducts)
   const [orders] = useState([])
   const [filters, setFilters] = useState({
     category: '',
@@ -21,8 +34,20 @@ function App() {
   const categoryStats = getCategoryStats(products)
   const filteredProducts = filterProducts(products, filters)
 
+  useEffect(() => {
+    try {
+      localStorage.setItem(PRODUCTS_STORAGE_KEY, JSON.stringify(products))
+    } catch (error) {
+      console.warn('Impossible de sauvegarder les produits', error)
+    }
+  }, [products])
+
   const handleFilterChange = (field, value) => {
     setFilters((current) => ({ ...current, [field]: value }))
+  }
+
+  const handleRestoreProducts = () => {
+    setProducts(backupProducts.map((product) => ({ ...product })))
   }
 
   return (
@@ -43,6 +68,7 @@ function App() {
               categories={Object.keys(categoryStats)}
               filters={filters}
               onFilterChange={handleFilterChange}
+              onRestoreProducts={handleRestoreProducts}
             />
           }
         />

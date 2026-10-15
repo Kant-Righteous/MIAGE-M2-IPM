@@ -1,7 +1,7 @@
 import SearchBar from '../components/searchbar/SearchBar.jsx'
 import TableProduct from '../components/product/TableProduct.jsx'
 
-function ProductsPage({ products, categories, filters, onFilterChange }) {
+function ProductsPage({ products, categories, filters, onFilterChange, onRestoreProducts }) {
   return (
     <main>
       <h1>Produits</h1>
@@ -11,6 +11,7 @@ function ProductsPage({ products, categories, filters, onFilterChange }) {
         onFilterChange={onFilterChange}
       />
       <TableProduct products={products} />
+      <button type="button" onClick={onRestoreProducts}>Restaurer les produits d'origine</button>
     </main>
   )
 }
