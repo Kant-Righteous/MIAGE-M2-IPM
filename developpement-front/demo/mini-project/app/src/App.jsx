@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import products from './model/products.json'
-import { filterProducts } from './model/filterProducts.js'
+import { filterProducts } from './model/productFilterModel.js'
 import { getCategoryStats } from './model/productStats.jsx'
 import HomePage from './pages/HomePage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
