@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import initialProducts from './model/products.json'
-import backupProducts from './model/products-backup.json'
 import { filterProducts, getCategoryStats } from './model/productModel.js'
 import HomePage from './pages/HomePage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
@@ -47,7 +46,7 @@ function App() {
   }
 
   const handleRestoreProducts = () => {
-    setProducts(backupProducts.map((product) => ({ ...product })))
+    setProducts(initialProducts.map((product) => ({ ...product })))
   }
 
   return (
