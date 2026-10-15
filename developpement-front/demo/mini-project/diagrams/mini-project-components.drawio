@@ -1643,8 +1643,8 @@
         <mxCell id="wire-38" value="" edge="1" source="submission-api-receptacle" target="submission-api-required-anchor" parent="1" style="html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;dashed=0;jettySize=16;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="submission-api-name" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;edit() / submit()&lt;br&gt;subscribe() / getSnapshot()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px&quot;&gt;编辑与提交 · 订阅与快照&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
-          <mxGeometry x="1210" y="1063.5" width="180" height="59" as="geometry" />
+        <mxCell id="submission-api-name" value="&lt;div style=&quot;line-height:1.15&quot;&gt;&lt;span style=&quot;font-size:14px&quot;&gt;edit() / submit(draft, execute)&lt;br&gt;subscribe(observer) / getSnapshot()&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px&quot;&gt;编辑与提交 · 订阅与快照&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1210" y="1063.5" width="330" height="59" as="geometry" />
         </mxCell>
         <mxCell id="submission-notify-source-anchor" value="" vertex="1" parent="submission" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;portConstraint=north;">
           <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
