@@ -3,7 +3,7 @@ export function validateOrderItems(products, items) {
     return { valid: false, reason: 'empty-order' }
   }
 
-  const requestedQuantities = new Map()
+  const selectedProductIds = new Set()
 
   for (const item of items) {
     if (!item || !Number.isInteger(item.quantity) || item.quantity <= 0) {
@@ -15,8 +15,11 @@ export function validateOrderItems(products, items) {
       return { valid: false, reason: 'unknown-product', productId: item.productId }
     }
 
-    const requested = (requestedQuantities.get(product.id) ?? 0) + item.quantity
-    if (requested > product.quantity) {
+    if (selectedProductIds.has(product.id)) {
+      return { valid: false, reason: 'duplicate-product', productId: product.id }
+    }
+
+    if (item.quantity > product.quantity) {
       return {
         valid: false,
         reason: 'insufficient-stock',
@@ -25,7 +28,7 @@ export function validateOrderItems(products, items) {
       }
     }
 
-    requestedQuantities.set(product.id, requested)
+    selectedProductIds.add(product.id)
   }
 
   return { valid: true }
