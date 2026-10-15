@@ -15,6 +15,8 @@ function App() {
     maxPrice: '',
     minQuantity: '',
     maxQuantity: '',
+    minRestockThreshold: '',
+    maxRestockThreshold: '',
   })
   const categoryStats = getCategoryStats(products)
   const filteredProducts = filterProducts(products, filters)

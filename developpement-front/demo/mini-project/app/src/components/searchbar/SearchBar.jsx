@@ -55,6 +55,24 @@ function SearchBar({ categories, filters, onFilterChange }) {
         value={filters.maxQuantity}
         onChange={(event) => onFilterChange('maxQuantity', event.target.value)}
       />
+      <label htmlFor="min-threshold-filter">Seuil de réapprovisionnement min</label>
+      <input
+        id="min-threshold-filter"
+        type="number"
+        min="0"
+        step="1"
+        value={filters.minRestockThreshold}
+        onChange={(event) => onFilterChange('minRestockThreshold', event.target.value)}
+      />
+      <label htmlFor="max-threshold-filter">Seuil de réapprovisionnement max</label>
+      <input
+        id="max-threshold-filter"
+        type="number"
+        min="0"
+        step="1"
+        value={filters.maxRestockThreshold}
+        onChange={(event) => onFilterChange('maxRestockThreshold', event.target.value)}
+      />
     </div>
   )
 }
