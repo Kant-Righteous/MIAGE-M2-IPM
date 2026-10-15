@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useOrderController } from '../controller/useOrderController.js'
 
 function getOrderErrorMessage(result, products) {
   switch (result.reason) {
@@ -24,53 +24,18 @@ function getOrderErrorMessage(result, products) {
 }
 
 function OrdersPage({ products, onPlaceOrder }) {
-  const [customer, setCustomer] = useState({ lastName: '', firstName: '', email: '' })
-  const [items, setItems] = useState([{ productId: '', quantity: 1 }])
-  const [feedback, setFeedback] = useState(null)
-  const availableProducts = products.filter((product) => product.quantity > 0)
-  const selectedProductIds = new Set(items.map((item) => item.productId))
-
-  const updateCustomer = (field, value) => {
-    setCustomer((current) => ({ ...current, [field]: value }))
-    setFeedback(null)
-  }
-
-  const updateItem = (index, field, value) => {
-    setItems((current) => current.map((item, itemIndex) => {
-      if (itemIndex !== index) return item
-      return field === 'productId'
-        ? { ...item, productId: value, quantity: 1 }
-        : { ...item, [field]: value }
-    }))
-    setFeedback(null)
-  }
-
-  const addItem = () => {
-    setItems((current) => [...current, { productId: '', quantity: 1 }])
-    setFeedback(null)
-  }
-
-  const removeItem = (index) => {
-    setItems((current) => current.filter((_, itemIndex) => itemIndex !== index))
-    setFeedback(null)
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    const result = onPlaceOrder({
-      ...customer,
-      items: items.map(({ productId, quantity }) => ({ productId, quantity: Number(quantity) })),
-    })
-
-    if (!result.valid) {
-      setFeedback({ type: 'error', message: getOrderErrorMessage(result, products) })
-      return
-    }
-
-    setCustomer({ lastName: '', firstName: '', email: '' })
-    setItems([{ productId: '', quantity: 1 }])
-    setFeedback({ type: 'success', message: 'Commande enregistrée.' })
-  }
+  const {
+    customer,
+    items,
+    feedback,
+    availableProducts,
+    selectedProductIds,
+    updateCustomer,
+    updateItem,
+    addItem,
+    removeItem,
+    handleSubmit,
+  } = useOrderController(products, onPlaceOrder)
 
   return (
     <main>
@@ -184,7 +149,11 @@ function OrdersPage({ products, onPlaceOrder }) {
               Valider la commande
             </button>
           </div>
-          {feedback && <p role={feedback.type === 'error' ? 'alert' : 'status'}>{feedback.message}</p>}
+          {feedback && (
+            <p role={feedback.valid ? 'status' : 'alert'}>
+              {feedback.valid ? 'Commande enregistrée.' : getOrderErrorMessage(feedback, products)}
+            </p>
+          )}
         </div>
       </form>
     </main>

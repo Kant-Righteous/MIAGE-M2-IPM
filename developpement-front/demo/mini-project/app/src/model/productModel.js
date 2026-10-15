@@ -23,6 +23,10 @@ export function isLowStock(product) {
   return product.quantity < product.restockThreshold
 }
 
+export function getAvailableProducts(products) {
+  return products.filter((product) => product.quantity > 0)
+}
+
 export function filterProducts(products, {
   category,
   name = '',
