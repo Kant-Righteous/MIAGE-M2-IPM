@@ -33,3 +33,22 @@ export function validateOrderItems(products, items) {
 
   return { valid: true }
 }
+
+export function deductOrderStock(products, items) {
+  const validation = validateOrderItems(products, items)
+  if (!validation.valid) {
+    return validation
+  }
+
+  const quantities = new Map(items.map(({ productId, quantity }) => [productId, quantity]))
+
+  return {
+    valid: true,
+    products: products.map((product) => {
+      const orderedQuantity = quantities.get(product.id)
+      return orderedQuantity === undefined
+        ? product
+        : { ...product, quantity: product.quantity - orderedQuantity }
+    }),
+  }
+}
