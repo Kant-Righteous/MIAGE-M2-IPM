@@ -4,6 +4,8 @@ Mini projet React : trois pages (Accueil, Produits, Commande) avec React Router,
 
 ## Lancer le projet
 
+Prérequis : Node.js 20.19 ou plus récent (ou 22.12+), exigé par Vite. On peut vérifier avec `node --version`.
+
 ```bash
 npm install
 npm run dev
