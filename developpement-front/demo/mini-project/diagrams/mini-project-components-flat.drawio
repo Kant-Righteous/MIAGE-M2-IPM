@@ -1,0 +1,1437 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" pages="3">
+  <diagram id="flat-overview" name="01 Overview · 应用总体">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="2020" pageHeight="960" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="flat-overview-v-1" value="01  Site commercial / 应用总体" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=28;fontStyle=1;fontColor=#111111;">
+          <mxGeometry x="40" y="20" width="1940" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-2" value="Mini Project · CCM Component Diagram / 迷你项目 · CCM 组件图" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=16;fontStyle=0;fontColor=#666666;">
+          <mxGeometry x="40" y="64" width="1940" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-3" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="55" y="123" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-4" value="Facet / 提供接口" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="88" y="121" width="122.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-5" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="405" y="119" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-6" value="Receptacle / 需要接口" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="437" y="121" width="158.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-7" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="828" y="124" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-8" value="Event Source / 事件源" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="860" y="121" width="159.2" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-9" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="1214" y="121" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-10" value="Event Sink / 事件接收端" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1246" y="121" width="172.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-11" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="1601" y="125" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-12" value="Attribute / 可配置属性" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1629" y="121" width="165.36" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-13" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=line;strokeColor=#CCCCCC;strokeWidth=1;">
+          <mxGeometry x="40" y="169" width="1940" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-14" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;useShopController&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商店控制器&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;React Hook&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="880" y="340" width="240" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-15" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Navigation principale&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;路由导航&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件 · Routes / Link&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;Accueil · Produits · Commandes&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="880" y="195" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-16" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Page Accueil&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;首页&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;non-standard / 非标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;HomePage&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="340" width="270" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-17" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Page Produits&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商品页&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;non-standard / 非标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;ProductsPage&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="560" width="270" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-18" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Page Commande&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;订单页&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;non-standard / 非标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;OrdersPage&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1670" y="560" width="270" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-19" value="" vertex="1" parent="flat-overview-v-16" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="54" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-20" value="categoryStats" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="405" width="102.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-21" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="392" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-22" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="388" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-23" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="457" y="387" width="82" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-24" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="367" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-25" value="categoryStats" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="377" width="102.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-28" value="" vertex="1" parent="flat-overview-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="59" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-30" value="" vertex="1" parent="flat-overview-v-16" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="114" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-31" value="orderCount" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="465" width="80.8" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-32" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="452" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-33" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="448" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-34" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="457" y="447" width="82" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-35" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="427" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-36" value="orderCount" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="437" width="80.8" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-39" value="" vertex="1" parent="flat-overview-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="119" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-41" value="" vertex="1" parent="flat-overview-v-17" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-42" value="products" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="605" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-43" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="592" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-44" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="588" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-45" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="457" y="587" width="82" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-46" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="567" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-47" value="filteredProducts" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="577" width="124.48" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-50" value="" vertex="1" parent="flat-overview-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="259" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-52" value="" vertex="1" parent="flat-overview-v-17" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="94" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-53" value="categories" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="665" width="80.8" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-54" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="652" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-55" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="648" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-56" value="Object.keys" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="450.82" y="647" width="94.36" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-57" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="627" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-58" value="categoryStats" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="637" width="102.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-61" value="" vertex="1" parent="flat-overview-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="319" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-63" value="" vertex="1" parent="flat-overview-v-17" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="154" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-64" value="filters" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="725" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-65" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="712" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-66" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="708" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-67" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="457" y="707" width="82" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-68" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="687" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-69" value="filters" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="697" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-72" value="" vertex="1" parent="flat-overview-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="379" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-74" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="685" y="770" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-75" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="665" y="773" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-76" value="onFilterChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="757" width="109.92" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-77" value="handleFilterChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="702" y="757" width="139.04" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-78" value="" vertex="1" parent="flat-overview-v-17" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="269" y="219" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-80" value="" vertex="1" parent="flat-overview-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="439" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-82" value="" vertex="1" parent="flat-overview-v-18" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-83" value="products" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1593.76" y="605" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-84" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="592" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-85" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="588" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-86" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1461" y="587" width="82" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-87" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1474.34" y="567" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-88" value="products" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="577" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-91" value="" vertex="1" parent="flat-overview-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="259" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-93" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="672" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-94" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="668" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-95" value="onPlaceOrder" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1564.64" y="657" width="95.36" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-96" value="handlePlaceOrder" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="657" width="124.48" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-97" value="" vertex="1" parent="flat-overview-v-18" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="119" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-99" value="" vertex="1" parent="flat-overview-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="339" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-101" value="" vertex="1" parent="flat-overview-v-15" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-102" value="" vertex="1" parent="flat-overview-v-17" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="139" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-104" value="element" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="811.04" y="208" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-105" value="path=&quot;/products&quot;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="45" y="208" width="124.48" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-106" value="" vertex="1" parent="flat-overview-v-15" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="61" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-107" value="" vertex="1" parent="flat-overview-v-16" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="134" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-109" value="element" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="811.04" y="240" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-110" value="path=&quot;/&quot;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="203" y="300" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-111" value="" vertex="1" parent="flat-overview-v-15" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="234" y="44" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-112" value="" vertex="1" parent="flat-overview-v-18" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="134" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-v-114" value="element" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1130" y="223" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-115" value="path=&quot;/orders&quot;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1813" y="300" width="109.92" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-116" value="Box titles use the names shown in the running app; the grey line gives the component in the code. Routes mounts each page through the element attribute of its Route path." vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#555555;">
+          <mxGeometry x="40" y="880" width="1940" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-v-117" value="框标题用运行中应用里显示的名称，灰色小字是代码里的组件名；Routes 通过各 Route 的 element 属性按 path 挂载页面。" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#555555;">
+          <mxGeometry x="40" y="900" width="1940" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-26" value="" edge="1" source="flat-overview-v-19" target="flat-overview-v-23" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-27" value="" edge="1" source="flat-overview-v-23" target="flat-overview-v-22" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-29" value="" edge="1" source="flat-overview-v-21" target="flat-overview-v-28" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-37" value="" edge="1" source="flat-overview-v-30" target="flat-overview-v-34" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-38" value="" edge="1" source="flat-overview-v-34" target="flat-overview-v-33" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-40" value="" edge="1" source="flat-overview-v-32" target="flat-overview-v-39" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-48" value="" edge="1" source="flat-overview-v-41" target="flat-overview-v-45" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-49" value="" edge="1" source="flat-overview-v-45" target="flat-overview-v-44" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-51" value="" edge="1" source="flat-overview-v-43" target="flat-overview-v-50" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-59" value="" edge="1" source="flat-overview-v-52" target="flat-overview-v-56" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-60" value="" edge="1" source="flat-overview-v-56" target="flat-overview-v-55" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-62" value="" edge="1" source="flat-overview-v-54" target="flat-overview-v-61" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-70" value="" edge="1" source="flat-overview-v-63" target="flat-overview-v-67" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-71" value="" edge="1" source="flat-overview-v-67" target="flat-overview-v-66" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-73" value="" edge="1" source="flat-overview-v-65" target="flat-overview-v-72" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-79" value="" edge="1" source="flat-overview-v-78" target="flat-overview-v-75" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-81" value="" edge="1" source="flat-overview-v-74" target="flat-overview-v-80" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-89" value="" edge="1" source="flat-overview-v-82" target="flat-overview-v-86" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-90" value="" edge="1" source="flat-overview-v-86" target="flat-overview-v-85" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-92" value="" edge="1" source="flat-overview-v-84" target="flat-overview-v-91" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-98" value="" edge="1" source="flat-overview-v-97" target="flat-overview-v-94" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-100" value="" edge="1" source="flat-overview-v-93" target="flat-overview-v-99" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-overview-e-103" value="" edge="1" source="flat-overview-v-101" target="flat-overview-v-102" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="35" y="230" />
+              <mxPoint x="35" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-e-108" value="" edge="1" source="flat-overview-v-106" target="flat-overview-v-107" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="195" y="262" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-overview-e-113" value="" edge="1" source="flat-overview-v-111" target="flat-overview-v-112" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1805" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="flat-products" name="02 Page Produits · 商品页">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="2020" pageHeight="670" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="flat-products-v-1" value="02  Page Produits / 商品页" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=28;fontStyle=1;fontColor=#111111;">
+          <mxGeometry x="40" y="20" width="1940" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-2" value="Mini Project · CCM Component Diagram / 迷你项目 · CCM 组件图" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=16;fontStyle=0;fontColor=#666666;">
+          <mxGeometry x="40" y="64" width="1940" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-3" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="55" y="123" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-4" value="Facet / 提供接口" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="88" y="121" width="122.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-5" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="405" y="119" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-6" value="Receptacle / 需要接口" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="437" y="121" width="158.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-7" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="828" y="124" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-8" value="Event Source / 事件源" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="860" y="121" width="159.2" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-9" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="1214" y="121" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-10" value="Event Sink / 事件接收端" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1246" y="121" width="172.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-11" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="1601" y="125" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-12" value="Attribute / 可配置属性" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1629" y="121" width="165.36" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-13" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=line;strokeColor=#CCCCCC;strokeWidth=1;">
+          <mxGeometry x="40" y="169" width="1940" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-14" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;useShopController&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商店控制器&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;React Hook&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="880" y="220" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-15" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;SearchBar&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商品筛选栏&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;non-standard / 非标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;Nom · Catégorie · Prix · Stock · Seuil&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="220" width="270" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-16" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;TableProduct&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商品表格&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;non-standard / 非标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;Nom · Catégorie · Prix ·&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;Quantité · Seuil de réapprovisionnement&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1670" y="220" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-17" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;RowProduct&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商品行&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;non-standard / 非标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;isLowStock(product) →&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;className=&quot;low-stock&quot;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1670" y="460" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-18" value="" vertex="1" parent="flat-products-v-15" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="54" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-19" value="categories" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="285" width="80.8" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-20" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="272" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-21" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="268" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-22" value="Object.keys" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="450.82" y="267" width="94.36" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-23" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="247" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-24" value="categoryStats" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="257" width="102.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-27" value="" vertex="1" parent="flat-products-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="59" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-29" value="" vertex="1" parent="flat-products-v-15" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="114" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-30" value="filters" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="345" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-31" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="332" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-32" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="328" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-33" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="457" y="327" width="82" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-34" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="307" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-35" value="filters" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="317" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-38" value="" vertex="1" parent="flat-products-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="119" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-40" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="685" y="390" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-41" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="665" y="393" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-42" value="onFilterChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="377" width="109.92" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-43" value="handleFilterChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="702" y="377" width="139.04" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-44" value="" vertex="1" parent="flat-products-v-15" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="269" y="179" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-46" value="" vertex="1" parent="flat-products-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="179" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-48" value="" vertex="1" parent="flat-products-v-16" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="54" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-49" value="products" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1593.76" y="285" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-50" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="272" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-51" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="268" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-52" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1461" y="267" width="82" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-53" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1474.34" y="247" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-54" value="filteredProducts" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="257" width="124.48" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-57" value="" vertex="1" parent="flat-products-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="59" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-59" value="products.map" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1750" y="387" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-60" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1686.68" y="390" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-61" value="" vertex="1" parent="flat-products-v-16" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="134" y="119" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-63" value="" vertex="1" parent="flat-products-v-17" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="129" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-products-v-65" value="products" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1815" y="346" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-66" value="product" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1815" y="428" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-67" value="SearchBar and TableProduct are rendered by Page Produits (ProductsPage); its props come from App (see 01)." vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#555555;">
+          <mxGeometry x="40" y="620" width="1940" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-v-68" value="SearchBar 与 TableProduct 由 Page Produits（ProductsPage）渲染，数据经 App 传入（见 01）。" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#555555;">
+          <mxGeometry x="40" y="640" width="1940" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-25" value="" edge="1" source="flat-products-v-18" target="flat-products-v-22" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-26" value="" edge="1" source="flat-products-v-22" target="flat-products-v-21" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-28" value="" edge="1" source="flat-products-v-20" target="flat-products-v-27" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-36" value="" edge="1" source="flat-products-v-29" target="flat-products-v-33" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-37" value="" edge="1" source="flat-products-v-33" target="flat-products-v-32" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-39" value="" edge="1" source="flat-products-v-31" target="flat-products-v-38" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-45" value="" edge="1" source="flat-products-v-44" target="flat-products-v-41" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-47" value="" edge="1" source="flat-products-v-40" target="flat-products-v-46" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-55" value="" edge="1" source="flat-products-v-48" target="flat-products-v-52" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-56" value="" edge="1" source="flat-products-v-52" target="flat-products-v-51" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-58" value="" edge="1" source="flat-products-v-50" target="flat-products-v-57" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-62" value="" edge="1" source="flat-products-v-61" target="flat-products-v-59" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-products-e-64" value="" edge="1" source="flat-products-v-59" target="flat-products-v-63" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="flat-orders" name="03 Page Commande · 订单页">
+    <mxGraphModel grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="1" pageScale="1" pageWidth="2020" pageHeight="1280" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="flat-orders-v-1" value="03  Page Commande / 订单页" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=28;fontStyle=1;fontColor=#111111;">
+          <mxGeometry x="40" y="20" width="1940" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-2" value="Mini Project · CCM Component Diagram / 迷你项目 · CCM 组件图" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=16;fontStyle=0;fontColor=#666666;">
+          <mxGeometry x="40" y="64" width="1940" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-3" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="55" y="123" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-4" value="Facet / 提供接口" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="88" y="121" width="122.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-5" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="405" y="119" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-6" value="Receptacle / 需要接口" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="437" y="121" width="158.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-7" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="828" y="124" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-8" value="Event Source / 事件源" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="860" y="121" width="159.2" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-9" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="1214" y="121" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-10" value="Event Sink / 事件接收端" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1246" y="121" width="172.64" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-11" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="1601" y="125" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-12" value="Attribute / 可配置属性" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1629" y="121" width="165.36" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-13" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=line;strokeColor=#CCCCCC;strokeWidth=1;">
+          <mxGeometry x="40" y="169" width="1940" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-14" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;useOrderController&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;订单控制器&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;React Hook&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="880" y="250" width="240" height="940" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-15" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Nom&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;客户姓氏&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件 · &amp;lt;input&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="250" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-16" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Prénom&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;客户名字&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件 · &amp;lt;input&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="410" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-17" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;E-mail&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;客户邮箱&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;&amp;lt;input type=&quot;email&quot;&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="570" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-18" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Formulaire de commande&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;订单表单&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件 · &amp;lt;form&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="730" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-19" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Valider la commande&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;提交订单按钮&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;&amp;lt;button type=&quot;submit&quot;&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="850" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-20" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Commande enregistrée.&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;订单反馈（成功或错误提示）&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件 · &amp;lt;p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;条件渲染：feedback&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="970" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-21" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:17px&quot;&gt;Aucun produit disponible.&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;无商品提示&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件 · &amp;lt;p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;条件渲染：availableProducts.length === 0&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="60" y="1090" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-22" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Produit N&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;商品选择（每个订单行一个）&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件 · &amp;lt;select&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1670" y="250" width="270" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-23" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Quantité&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;购买数量（每个订单行一个）&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;&amp;lt;input type=&quot;number&quot;&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1670" y="530" width="270" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-24" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Retirer le produit N&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;移除商品按钮（垃圾桶图标）&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件 · &amp;lt;button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;条件渲染：items.length &amp;gt; 1&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1670" y="790" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-25" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b style=&quot;font-size:19px&quot;&gt;Ajouter un produit&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;添加商品按钮&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:13px;color:#555555&quot;&gt;standard / 标准组件&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#555555&quot;&gt;&amp;lt;button type=&quot;button&quot;&amp;gt;&lt;/span&gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.5;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;spacing=8;container=1;collapsible=0;recursiveResize=0;connectable=0;">
+          <mxGeometry x="1670" y="910" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-26" value="" vertex="1" parent="flat-orders-v-15" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-27" value="value" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="295" width="44.4" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-28" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="282" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-29" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="278" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-30" value="customer.lastName" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="430.54" y="277" width="134.92" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-31" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="257" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-32" value="customer" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="267" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-35" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-37" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="685" y="340" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-38" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="665" y="343" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-39" value="onChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="327" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-40" value="updateCustomer" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="702" y="327" width="109.92" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-41" value="" vertex="1" parent="flat-orders-v-15" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="269" y="99" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-43" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="99" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-45" value="" vertex="1" parent="flat-orders-v-16" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-46" value="value" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="455" width="44.4" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-47" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="442" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-48" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="438" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-49" value="customer.firstName" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="427.16" y="437" width="141.68" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-50" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="417" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-51" value="customer" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="427" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-54" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="199" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-56" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="685" y="500" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-57" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="665" y="503" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-58" value="onChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="487" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-59" value="updateCustomer" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="702" y="487" width="109.92" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-60" value="" vertex="1" parent="flat-orders-v-16" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="269" y="99" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-62" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="259" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-64" value="" vertex="1" parent="flat-orders-v-17" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-65" value="value" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="615" width="44.4" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-66" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="602" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-67" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="598" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-68" value="customer.email" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="440.68" y="597" width="114.64" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-69" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="470.34" y="577" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-70" value="customer" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="587" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-73" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="359" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-75" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="685" y="660" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-76" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="665" y="663" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-77" value="onChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="647" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-78" value="updateCustomer" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="702" y="647" width="109.92" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-79" value="" vertex="1" parent="flat-orders-v-17" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="269" y="99" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-81" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="419" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-83" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=0;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="685" y="770" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-84" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=0;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="665" y="773" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-85" value="onSubmit" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="757" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-86" value="handleSubmit" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="702" y="757" width="95.36" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-87" value="" vertex="1" parent="flat-orders-v-18" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="269" y="49" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-89" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="529" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-91" value="" vertex="1" parent="flat-orders-v-19" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="44" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-92" value="disabled" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="905" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-93" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="892" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-94" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="888" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-95" value="availableProducts.length === 0" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="416.24" y="887" width="222.8" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-96" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="499.98" y="867" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-97" value="availableProducts" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="877" width="131.76" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-100" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="649" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-102" value="" vertex="1" parent="flat-orders-v-20" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="44" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-103" value="children, role" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="340" y="1025" width="109.92" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-104" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="682" y="1012" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-105" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=180;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="676" y="1008" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-106" value="feedback.valid ? … :&lt;br&gt;getOrderErrorMessage(…)" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="459.92" y="999" width="175.48" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-107" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="520" y="979" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-108" value="feedback" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="704" y="997" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-111" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="769" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-113" value="" vertex="1" parent="flat-orders-v-22" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-114" value="value" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1615.6" y="295" width="44.4" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-115" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="282" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-116" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="278" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-117" value="items.map(…)&lt;br&gt;item.productId" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1444.68" y="269" width="114.64" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-118" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1474.34" y="249" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-119" value="items" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="267" width="44.4" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-122" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-124" value="" vertex="1" parent="flat-orders-v-22" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="94" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-125" value="option" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1608.32" y="355" width="51.68" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-126" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="342" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-127" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="338" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-128" value="availableProducts.map(…)" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1410.88" y="337" width="182.24" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-129" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1474.34" y="317" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-130" value="availableProducts" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="327" width="131.76" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-133" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="99" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-135" value="" vertex="1" parent="flat-orders-v-22" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="154" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-136" value="option.disabled" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1542.8" y="415" width="117.2" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-137" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="402" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-138" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="398" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-139" value="selectedProductIds.has(…)" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1343.8" y="397" width="189" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-140" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1410.64" y="377" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-141" value="selectedProductIds" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="387" width="139.04" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-144" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="159" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-146" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=180;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="1305" y="460" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-147" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=180;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="1321" y="463" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-148" value="onChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1593.76" y="447" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-149" value="updateItem" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="447" width="80.8" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-150" value="" vertex="1" parent="flat-orders-v-22" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="219" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-152" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="219" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-154" value="" vertex="1" parent="flat-orders-v-23" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-155" value="value" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1615.6" y="575" width="44.4" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-156" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="562" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-157" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="558" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-158" value="items.map(…)&lt;br&gt;item.quantity" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1448.06" y="549" width="107.88" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-159" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1474.34" y="529" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-160" value="items" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="547" width="44.4" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-163" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="319" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-165" value="" vertex="1" parent="flat-orders-v-23" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="94" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-166" value="max" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1630.16" y="635" width="29.84" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-167" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="622" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-168" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="618" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-169" value="products.find(…)?.quantity" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1404.12" y="617" width="195.76" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-170" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1474.34" y="597" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-171" value="items" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="607" width="44.4" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-174" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="379" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-176" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=180;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="1305" y="680" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-177" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=180;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="1321" y="683" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-178" value="onChange" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1593.76" y="667" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-179" value="updateItem" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="667" width="80.8" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-180" value="" vertex="1" parent="flat-orders-v-23" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="159" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-182" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="439" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-184" value="" vertex="1" parent="flat-orders-v-22" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-185" value="id" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1950" y="258" width="22.56" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-186" value="id = product-{index}" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1784.8" y="271" width="143.2" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-187" value="" vertex="1" parent="flat-orders-v-23" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-188" value="id" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1950" y="538" width="22.56" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-189" value="id = quantity-{index}" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1778.04" y="551" width="149.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-190" value="" vertex="1" parent="flat-orders-v-23" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="184" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-191" value="min" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1950" y="698" width="29.84" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-192" value="min = 1" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1872.68" y="711" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-193" value="" vertex="1" parent="flat-orders-v-23" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="264" y="214" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-194" value="step" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1950" y="728" width="37.12" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-195" value="step = 1" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1865.92" y="741" width="62.08" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-196" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=180;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="1305" y="830" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-197" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=180;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="1321" y="833" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-198" value="onClick" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1601.04" y="817" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-199" value="removeItem" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="817" width="80.8" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-200" value="" vertex="1" parent="flat-orders-v-24" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="49" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-202" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="589" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-204" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=step;rotation=180;size=0.6;fillColor=#ffffff;strokeColor=#111111;strokeWidth=1.2;">
+          <mxGeometry x="1305" y="940" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-205" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;triangle;rotation=180;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="1321" y="943" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-206" value="onClick" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1601.04" y="927" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-207" value="addItem" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="927" width="58.96" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-208" value="" vertex="1" parent="flat-orders-v-25" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="-1" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-210" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="699" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-212" value="" vertex="1" parent="flat-orders-v-25" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="-6" y="94" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-213" value="disabled" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1593.76" y="1015" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-214" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;ellipse;fillColor=#ffffff;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1302" y="1002" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-215" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=0;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1312" y="998" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-216" value="items.length &amp;gt;=&lt;br&gt;availableProducts.length" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;rounded=0;strokeColor=#222222;strokeWidth=1.2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=nowrap;fontSize=13;spacing=2;">
+          <mxGeometry x="1401.52" y="989" width="182.24" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-217" value="adapter" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1464.98" y="969" width="55.32" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-218" value="items, availableProducts" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1128" y="987" width="182.72" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-221" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="239" y="759" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-223" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=rectangle;fillColor=#111111;strokeColor=#111111;">
+          <mxGeometry x="0" y="0" width="12" height="12" as="geometry" relative="1">
+            <mxPoint x="74" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-224" value="products" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="926.88" y="222" width="66.24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-225" value="" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=requiredInterface;rotation=90;fillColor=none;strokeColor=#222222;strokeWidth=1.4;">
+          <mxGeometry x="1034" y="202" width="12" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-226" value="" vertex="1" parent="flat-orders-v-14" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;shape=ellipse;fillColor=none;strokeColor=none;">
+          <mxGeometry x="0" y="0" width="2" height="2" as="geometry" relative="1">
+            <mxPoint x="159" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flat-orders-v-228" value="onPlaceOrder" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#111111;">
+          <mxGeometry x="1058" y="204" width="95.36" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-229" value="products and onPlaceOrder are the props of Page Commande (OrdersPage) passed to useOrderController (see 01). Conditions in boxes are JSX &amp;amp;&amp;amp; rendering; squares without a wire are attributes fixed in the JSX." vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=14;fontStyle=0;fontColor=#555555;">
+          <mxGeometry x="40" y="1230" width="1940" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-v-230" value="products 与 onPlaceOrder 是 Page Commande（OrdersPage）传给 useOrderController 的 props（见 01）；框内“条件渲染”对应 JSX 的 &amp;amp;&amp;amp;；不连线的属性方块是 JSX 里写死的常量。" vertex="1" parent="1" style="html=1;fontFamily=Microsoft YaHei;fontSize=16;fontColor=#111111;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;spacing=0;fontSize=13;fontStyle=0;fontColor=#555555;">
+          <mxGeometry x="40" y="1250" width="1940" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-33" value="" edge="1" source="flat-orders-v-26" target="flat-orders-v-30" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-34" value="" edge="1" source="flat-orders-v-30" target="flat-orders-v-29" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-36" value="" edge="1" source="flat-orders-v-28" target="flat-orders-v-35" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-42" value="" edge="1" source="flat-orders-v-41" target="flat-orders-v-38" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-44" value="" edge="1" source="flat-orders-v-37" target="flat-orders-v-43" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-52" value="" edge="1" source="flat-orders-v-45" target="flat-orders-v-49" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-53" value="" edge="1" source="flat-orders-v-49" target="flat-orders-v-48" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-55" value="" edge="1" source="flat-orders-v-47" target="flat-orders-v-54" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-61" value="" edge="1" source="flat-orders-v-60" target="flat-orders-v-57" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-63" value="" edge="1" source="flat-orders-v-56" target="flat-orders-v-62" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-71" value="" edge="1" source="flat-orders-v-64" target="flat-orders-v-68" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-72" value="" edge="1" source="flat-orders-v-68" target="flat-orders-v-67" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-74" value="" edge="1" source="flat-orders-v-66" target="flat-orders-v-73" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-80" value="" edge="1" source="flat-orders-v-79" target="flat-orders-v-76" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-82" value="" edge="1" source="flat-orders-v-75" target="flat-orders-v-81" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-88" value="" edge="1" source="flat-orders-v-87" target="flat-orders-v-84" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-90" value="" edge="1" source="flat-orders-v-83" target="flat-orders-v-89" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-98" value="" edge="1" source="flat-orders-v-91" target="flat-orders-v-95" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-99" value="" edge="1" source="flat-orders-v-95" target="flat-orders-v-94" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-101" value="" edge="1" source="flat-orders-v-93" target="flat-orders-v-100" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-109" value="" edge="1" source="flat-orders-v-102" target="flat-orders-v-106" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-110" value="" edge="1" source="flat-orders-v-106" target="flat-orders-v-105" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-112" value="" edge="1" source="flat-orders-v-104" target="flat-orders-v-111" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-120" value="" edge="1" source="flat-orders-v-113" target="flat-orders-v-117" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-121" value="" edge="1" source="flat-orders-v-117" target="flat-orders-v-116" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-123" value="" edge="1" source="flat-orders-v-115" target="flat-orders-v-122" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-131" value="" edge="1" source="flat-orders-v-124" target="flat-orders-v-128" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-132" value="" edge="1" source="flat-orders-v-128" target="flat-orders-v-127" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-134" value="" edge="1" source="flat-orders-v-126" target="flat-orders-v-133" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-142" value="" edge="1" source="flat-orders-v-135" target="flat-orders-v-139" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-143" value="" edge="1" source="flat-orders-v-139" target="flat-orders-v-138" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-145" value="" edge="1" source="flat-orders-v-137" target="flat-orders-v-144" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-151" value="" edge="1" source="flat-orders-v-150" target="flat-orders-v-147" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-153" value="" edge="1" source="flat-orders-v-146" target="flat-orders-v-152" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-161" value="" edge="1" source="flat-orders-v-154" target="flat-orders-v-158" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-162" value="" edge="1" source="flat-orders-v-158" target="flat-orders-v-157" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-164" value="" edge="1" source="flat-orders-v-156" target="flat-orders-v-163" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-172" value="" edge="1" source="flat-orders-v-165" target="flat-orders-v-169" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-173" value="" edge="1" source="flat-orders-v-169" target="flat-orders-v-168" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-175" value="" edge="1" source="flat-orders-v-167" target="flat-orders-v-174" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-181" value="" edge="1" source="flat-orders-v-180" target="flat-orders-v-177" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-183" value="" edge="1" source="flat-orders-v-176" target="flat-orders-v-182" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-201" value="" edge="1" source="flat-orders-v-200" target="flat-orders-v-197" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-203" value="" edge="1" source="flat-orders-v-196" target="flat-orders-v-202" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-209" value="" edge="1" source="flat-orders-v-208" target="flat-orders-v-205" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-211" value="" edge="1" source="flat-orders-v-204" target="flat-orders-v-210" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-219" value="" edge="1" source="flat-orders-v-212" target="flat-orders-v-216" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-220" value="" edge="1" source="flat-orders-v-216" target="flat-orders-v-215" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-222" value="" edge="1" source="flat-orders-v-214" target="flat-orders-v-221" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flat-orders-e-227" value="" edge="1" source="flat-orders-v-226" target="flat-orders-v-225" parent="1" style="html=1;edgeStyle=none;rounded=0;endArrow=none;startArrow=none;strokeWidth=1.4;strokeColor=#222222;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -10,14 +10,12 @@
 |---|---|---|---|
 | MVC（模型—视图—控制器） | 架构模式 | 已采用，按 React 的组件与 Hook 组织 | Model 模块、两个 Controller Hook、页面与展示组件 |
 | Singleton（单例） | 创建型 | 已实现，限制在当前模块实例范围 | `ShopStore` |
-| Abstract Factory（抽象工厂） | 创建型 | 未采用，分析其适用条件与当前设计的兼容性 | 当前直接组合具体类 |
+| Abstract Factory（抽象工厂） | 创建型 | 未采用，当前项目没有使用必要 | 当前直接组合具体类 |
 | Builder（建造者） | 创建型 | 已实现，使用一个具体 Builder | `OrderBuilder` |
 | Decorator（装饰器） | 结构型 | 已实现，组合多个订单验证规则 | `orderValidators.js` |
 | Command（命令） | 行为型 | 已实现，同步执行下单请求 | `PlaceOrderCommand` |
 | Observer（观察者） | 行为型 | 已实现，支持订阅、通知与退订 | `ObservableSubject` |
 | State（状态） | 行为型 | 已实现，三个状态对象改变提交行为 | `OrderSubmission` 及三个具体状态类 |
-
-创建型、结构型、行为型的术语采用 [GoF《Design Patterns》的分类](https://www.informit.com/store/design-patterns-elements-of-reusable-object-oriented-software-9780201633610)。MVC 单独作为架构模式讨论。
 
 下文的“已实现”以对象职责与实际调用关系为依据。JavaScript 中的接口可以由共同的方法约定表达，不要求额外创建一个空的抽象类。源码块均为项目现有代码的原样节选，局部方法或表达式应结合链接中的完整文件阅读。
 
@@ -25,7 +23,7 @@
 
 ### 2.1 目的与角色
 
-MVC 将业务数据和规则、界面显示、用户操作的处理分开。这里采用适合 React 的轻量组织方式，重点是业务逻辑与显示职责的分离。[MVC 的职责划分参考 Martin Fowler 的 GUI Architectures](https://martinfowler.com/eaaDev/uiArchs.html)。
+MVC 将业务数据和规则、界面显示、用户操作的处理分开。这里采用适合 React 的轻量组织方式，重点是业务逻辑与显示职责的分离。
 
 | 角色 | 项目对应 | 职责 |
 |---|---|---|
@@ -87,14 +85,6 @@ MVC 将业务数据和规则、界面显示、用户操作的处理分开。这�
 
 因此，输入处理在 View，筛选状态在 Controller，筛选判定在 Model。
 
-### 2.3 适用性、完整度与边界
-
-这种划分让统计、筛选和订单规则可以脱离页面运行与测试。展示组件的拆分沿用了课堂示例中筛选栏、表格、商品行的组织思路。
-
-这是轻量 MVC，而非逐类照搬传统 GUI 框架。`RowProduct` 会直接调用 Model 的只读查询 `isLowStock(product)`，再选择 CSS 类；低库存规则仍定义在 Model。订单的错误原因由 Model 返回，法语提示文案由 View 中的 `getOrderErrorMessage` 决定。
-
-React 本身不会自动完成 MVC；这里的职责边界来自项目的模块划分和调用方式。
-
 ## 3. Singleton：共享商店实例
 
 ### 3.1 目的与角色
@@ -143,46 +133,11 @@ export class ShopStore {
 
 `constructorKey` 没有导出，外部直接调用 `new ShopStore()` 会抛出错误。`useShopController` 通过 `getInstance()` 获得商店，再订阅它的快照。
 
-### 3.3 适用性、完整度与边界
+## 4. Abstract Factory：为什么不用抽象工厂
 
-该实现同时具备统一入口、实例缓存和构造限制，符合当前应用的单例用途。单例位于 Model 层，三个页面不会因为分别渲染而创建多套库存。
+当前项目只有一套商品、订单和验证规则，直接创建和组合现有类就够了，不需要根据不同场景换成另一套。
 
-唯一性限于当前 JavaScript 模块实例。浏览器标签页之间不共享这个对象，整页刷新会重新创建它。它不提供数据库或持久化能力，也不会写回 `products.json`。
-
-全局访问也使依赖更集中。项目通过向 `PlaceOrderCommand` 显式传入接收者，让命令仍可使用替代接收者单独测试。
-
-## 4. Abstract Factory：未采用的抽象工厂
-
-### 4.1 目的与标准角色
-
-Abstract Factory 通过共同的创建接口，生成一组彼此配套的对象。通常涉及抽象工厂、具体工厂、抽象产品、具体产品及使用者。[定义与参与者参考 GoF 原著的 Abstract Factory 公开节选](https://www.informit.com/articles/article.aspx?p=1398599)。
-
-这里的“产品”指工厂创建的软件对象，不是商品数据里的水果或蔬菜。
-
-### 4.2 当前代码实例与判断
-
-当前订单验证器直接由具体类组合：
-
-源码：[model/orderModel.js:9](D:/CZY/Learn/MIAGE-M2-IPM/developpement-front/demo/mini-project/app/src/model/orderModel.js:9)，第 9–12 行。
-
-```js
-const itemsValidator = new StockValidationDecorator(
-  new UniqueProductsDecorator(new OrderItemsValidator()),
-)
-const orderValidator = new CustomerValidationDecorator(itemsValidator)
-```
-
-调用者明确知道 `StockValidationDecorator`、`UniqueProductsDecorator` 和 `OrderItemsValidator`。代码没有通过统一的工厂接口切换一组配套对象，也没有相关的多套对象族。因此，该段代码体现的是具体对象的创建和 Decorator 组合。
-
-`new OrderBuilder()` 负责逐步组装一张订单；`ShopStore.getInstance()` 负责取得单例。两者都没有承担“创建一组相关产品对象”的职责。
-
-### 4.3 适用性与架构兼容性
-
-当前只有一套商品结构、订单结构与验证规则，没有需要成套替换的对象族。仅因存在四个商品类别就建立多个工厂，不能带来这里所需的对象族切换能力。
-
-JavaScript 和 React 不阻止使用 Abstract Factory。若以后确实需要成套替换相关领域对象，可以在 Model 的创建边界引入工厂，并让业务调用者依赖共同接口；View 仍可保留现有 props 契约。
-
-这是条件分析，当前代码尚未采用该模式。现阶段直接组合具体类更贴合应用规模，也避免增加无实际使用场景的抽象。
+抽象工厂适合需要成套创建、切换对象的情况。这个项目目前没有这个需求，加上它只会多出一些类和接口，让代码更绕，所以没有采用。
 
 ## 5. Builder：分步骤构建订单
 
@@ -237,7 +192,7 @@ export class OrderBuilder {
 
 实际业务调用先通过验证，再构建订单并计算扣减后的库存：
 
-源码：[model/orderModel.js:35](D:/CZY/Learn/MIAGE-M2-IPM/developpement-front/demo/mini-project/app/src/model/orderModel.js:35)，第 35–48 行。
+源码：[model/orderModel.js:35](D:/CZY/Learn/MIAGE-M2-IPM/developpement-front/demo/mini-project/app/src/model/orderModel.js:35)，第 35–49 行。
 
 ```js
 export function placeOrder(products, draft) {
@@ -254,16 +209,8 @@ export function placeOrder(products, draft) {
     products: applyStockDeduction(products, order.items),
     order,
   }
+}
 ```
-
-### 5.3 适用性、完整度与边界
-
-该实现把“如何逐步组装订单”从“何时允许下单”中分离出来。构建结果中的订单行不复用 Builder 内部的行对象；以后继续调用 `addItem()` 不会改变先前返回的订单。
-
-项目使用一个具体 Builder，Director 的职责由函数承担。没有额外的抽象 Builder 类，也没有多种订单表示；这是当前需求下的轻量实现。
-
-`build()` 只检查客户信息是否已设置、是否至少有一条订单行。邮箱格式、重复商品、合法数量与库存限制由验证器负责；单独调用 Builder 不代表已经完成全部业务验证。
-
 ## 6. Decorator：可组合的订单验证
 
 ### 6.1 目的与角色
@@ -325,9 +272,16 @@ export class StockValidationDecorator extends OrderValidatorDecorator {
 }
 ```
 
-完整的包装结构由第 4 节所示的实际创建代码组成：
+实际验证器的组合定义在 `orderModel.js` 中：
 
-`CustomerValidationDecorator(StockValidationDecorator(UniqueProductsDecorator(OrderItemsValidator)))`
+源码：[model/orderModel.js:9](D:/CZY/Learn/MIAGE-M2-IPM/developpement-front/demo/mini-project/app/src/model/orderModel.js:9)，第 9–12 行。
+
+```js
+const itemsValidator = new StockValidationDecorator(
+  new UniqueProductsDecorator(new OrderItemsValidator()),
+)
+const orderValidator = new CustomerValidationDecorator(itemsValidator)
+```
 
 实际判定顺序是：
 
@@ -337,14 +291,6 @@ export class StockValidationDecorator extends OrderValidatorDecorator {
 4. 再返回到 `StockValidationDecorator`，检查库存。
 
 遇到失败即返回首个失败结果。
-
-### 6.3 适用性、完整度与边界
-
-共同接口、被包装对象、委托调用和规则叠加均在代码中存在，因此这里具备 Decorator 的主要结构。新增独立规则可以增加一个包装层，业务入口仍调用 `validate()`。
-
-这些规则有顺序依赖：库存规则在查找商品后直接读取 `product.quantity`，因此依赖基础验证器先确认商品存在。当前组合满足这个前提，不能认为所有包装顺序都可以随意交换。
-
-这套机制位于 Model，保护实际下单入口。页面中的 `required`、`min`、`max` 和禁用重复选项提供即时交互反馈，最终仍需经过同一套 Model 验证。CSS 低库存样式不属于这里的 Decorator 模式。
 
 ## 7. Command：将下单请求封装成对象
 
@@ -391,13 +337,7 @@ Controller 实际创建并执行命令：
 
 Client 与 Invoker 的职责在当前实现中集中于同一个回调。`execute()` 委托接收者的 `placeOrder()`，并将结果原样返回给提交状态对象。
 
-### 7.3 适用性、完整度与边界
-
-命令对象拥有接收者和请求数据，符合请求对象化的结构。`structuredClone(draft)` 捕获创建时的草稿；外部随后修改原草稿，不会改变这条命令保存的请求。
-
-当前只有一种同步命令，没有额外的抽象 Command 类、队列、历史或撤销功能。它们不是本项目实际提供的能力。
-
-命令本身也没有“只执行一次”的限制。防止同一已成功提交再次执行，由后面的 State 机制负责；Command 不能单独提供去重或事务保证。
+这种封装也为以后增加撤销提供了扩展点：可以为命令增加 `undo()`，保存本次成功执行的结果或必要的撤销信息，并由调用方保留已执行的命令。撤销下单时，由 Model 恢复对应库存并更新订单列表，保持共享状态一致。当前代码尚未实现 `undo()` 或保存命令历史，因此撤销属于后续可扩展的能力。
 
 ## 8. Observer：让 React 接收状态变化
 
@@ -453,7 +393,7 @@ export class ObservableSubject {
 
 `ShopStore` 和 `OrderSubmission` 各自持有一个 `ObservableSubject`，分别通知业务数据变化和表单提交状态变化。
 
-React 的 `useSyncExternalStore` 通过订阅函数和快照函数接入外部状态；订阅函数返回退订函数，快照在没有变化时需要保持稳定。[接口要求见 React 官方文档](https://react.dev/reference/react/useSyncExternalStore)。
+React 的 `useSyncExternalStore` 通过订阅函数和快照函数接入外部状态；订阅函数返回退订函数，快照在没有变化时需要保持稳定。
 
 ### 8.3 实际通知过程
 
@@ -464,14 +404,6 @@ React 的 `useSyncExternalStore` 通过订阅函数和快照函数接入外部�
 5. 之后切换到另一个页面，该页面也从同一个 Controller 获得最新数据。
 
 当前是 `App` 调用的 `useShopController` 订阅商店；三个页面通过 props 接收结果，并非每个页面都直接注册一个 Observer。
-
-### 8.4 适用性、完整度与边界
-
-订阅、保存订阅者、通知和退订均已实现。`Set` 避免同一个回调重复登记；`Object.is` 跳过相同快照引用的更新；`getSnapshot()` 返回保存的引用。
-
-该机制要求调用者用新快照表达变化。若绕过接口直接修改快照内部对象，就不会自动触发通知。当前商店成功下单时创建新快照，失败时保留原快照。
-
-通知是同步函数调用。观察者模式在这里负责页面数据同步，不提供跨标签页广播或后端推送。
 
 ## 9. State：订单提交状态改变行为
 
@@ -556,16 +488,6 @@ class AcceptedOrderState extends OrderSubmissionState {
 | `accepted` | 重复提交 | 保持 `accepted`，返回原结果，不执行新下单 |
 | `accepted` | 编辑字段或订单行 | 进入 `editing`，允许准备下一张订单 |
 
-### 9.4 适用性、完整度与边界
-
-Context、共同操作、三个具体状态和委托调用均存在。判断依据是状态对象改变了 `submit()` 的行为；界面使用的 `status` 字符串只是这些对象提供的快照信息。
-
-`useOrderController` 中的 React `useState` 保存这个 Context 实例；单独使用 React `useState` 并不自动等于采用 State 模式。
-
-提交成功后，Controller 会清空表单字段，但状态仍保持 `accepted`。用户下一次修改字段或订单行时才触发 `edit()`。离开订单页后，这个页面的 Controller 会卸载；再次进入会创建新的提交状态，但共享 `ShopStore` 仍保留。
-
-当前实现处理编辑、失败与成功三种同步提交状态，没有异步加载、支付或配送状态。
-
 ## 10. 模式如何协作完成一次下单
 
 实际调用顺序如下：
@@ -591,8 +513,6 @@ Context、共同操作、三个具体状态和委托调用均存在。判断依�
 | 下单 2 件 Pomme、1 件 Banane，客户信息合法 | Pomme 库存从 12 变为 10，Banane 从 3 变为 2，Fruit 总库存变为 37 | Fruit 商品数仍为 5，平均库存为 7.4，订单数为 1 |
 | 随后通过同一业务入口请求 4 件 Banane | 返回 `insufficient-stock`，保留已有库存和订单 | Fruit 平均库存仍为 7.4，订单数仍为 1 |
 
-库存扣减与 Fruit 平均库存 7.4 的示例，以及单例、Builder、Decorator、Command、Observer 和 State 的行为，都有现有测试用例支持：[shop.test.js](D:/CZY/Learn/MIAGE-M2-IPM/developpement-front/demo/mini-project/app/tests/shop.test.js)。
-
 ## 11. 综合分析
 
 MVC 决定职责放在哪里；其他已采用的模式解决这些职责内部的具体问题：
@@ -601,4 +521,4 @@ MVC 决定职责放在哪里；其他已采用的模式解决这些职责内部�
 - Controller 使用 Command 表达下单动作，使用 State 管理本次提交的行为。
 - Observer 将 Model 与提交状态的变化接入 React 渲染。
 
-七种已采用模式的角色及调用关系都可在当前代码中定位。其中 MVC、Builder 和 Command 保持了适合项目规模的简化形式。Abstract Factory 与当前技术栈兼容，但当前没有需要成套创建并切换的对象族，因此保留为适用性分析。
+七种已采用模式的角色及调用关系都可在当前代码中定位。其中 MVC、Builder 和 Command 保持了适合项目规模的简化形式。当前没有需要成套创建并切换的对象族，因此没有必要采用 Abstract Factory。
