@@ -2,6 +2,8 @@
 
 ## 第一部分：组件图
 
+图中的 "Use Shop Behavior" 和 "Use Order Behavior" 分别对应代码里的 `useShopController` 和 `useOrderController`。连线上的简写 `update`、`add`、`remove`、`submit` 对应 `updateCustomer` / `updateItem`、`addItem`、`removeItem` 和 `handleSubmit`；`enabled` 对应 `disabled` 属性（含义相反）。
+
 ### 图 1：应用总体
 
 ![图 1：应用总体组件图](diagrams/report-01-overview.jpg)

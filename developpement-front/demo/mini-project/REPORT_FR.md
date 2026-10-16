@@ -2,6 +2,8 @@
 
 ## Partie 1 : Diagrammes de composants
 
+Dans les schémas, « Use Shop Behavior » et « Use Order Behavior » correspondent à `useShopController` et `useOrderController`. Les noms courts sur les connexions (`update`, `add`, `remove`, `submit`) correspondent à `updateCustomer` / `updateItem`, `addItem`, `removeItem` et `handleSubmit`, et `enabled` correspond à l'attribut `disabled` (inversé).
+
 ### Figure 1 : vue d'ensemble de l'application
 
 ![Figure 1 : diagramme de composants de l'application](diagrams/report-01-overview.jpg)
