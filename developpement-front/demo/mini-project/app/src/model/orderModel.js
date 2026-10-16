@@ -21,17 +21,6 @@ function applyStockDeduction(products, items) {
   })
 }
 
-export function validateOrderItems(products, items) {
-  return itemsValidator.validate(products, { items })
-}
-
-export function deductOrderStock(products, items) {
-  const validation = validateOrderItems(products, items)
-  if (!validation.valid) return validation
-
-  return { valid: true, products: applyStockDeduction(products, items) }
-}
-
 export function placeOrder(products, draft) {
   const validation = orderValidator.validate(products, draft)
   if (!validation.valid) return validation
