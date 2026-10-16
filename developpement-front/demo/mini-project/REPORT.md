@@ -24,20 +24,20 @@ SearchBar 有 7 个输入框和 1 个下拉框，可以按所有属性筛选，�
 
 | 模式 | 情况 | 是否完整 | 位置 |
 |---|---|---|---|
-| MVC | 存在 | 完整 | `model/`、`controller/`、`pages/` 和 `components/` |
+| MVC | 存在 | 完整 | `model/`、`controller/`、`pages/`、`components/` 和 `App.jsx` |
 | Singleton | 存在 | 完整 | `model/ShopStore.js` |
 | Abstract Factory | 兼容，没有实现 | — | — |
-| Builder | 存在 | 不完整 | `model/OrderBuilder.js` |
-| Decorator | 存在 | 完整 | `model/orderValidators.js` |
-| Command | 存在 | 不完整 | `controller/PlaceOrderCommand.js` |
-| Observer | 存在 | 完整 | `model/ObservableSubject.js` |
-| State | 存在 | 完整 | `controller/OrderSubmission.js` |
+| Builder | 存在 | 不完整 | `model/OrderBuilder.js`、`model/orderModel.js` |
+| Decorator | 存在 | 完整 | `model/orderValidators.js`、`model/orderModel.js` |
+| Command | 存在 | 不完整 | `controller/PlaceOrderCommand.js`、`controller/useShopController.js` |
+| Observer | 存在 | 完整 | `model/ObservableSubject.js`（`ShopStore` 和 `OrderSubmission` 使用） |
+| State | 存在 | 完整 | `controller/OrderSubmission.js`、`controller/useOrderController.js` |
 
 ### MVC
 
-- Model：`ShopStore`、`productModel`、`orderModel`；
-- View：页面和展示组件；
-- Controller：两个 Hook，负责保存筛选条件和表单内容，并调用 Model。
+- Model：`ShopStore`、`productModel`、`orderModel`（以及它们内部用到的 `OrderBuilder`、`orderValidators`、`ObservableSubject` 和数据文件 `products.json`）；
+- View：页面和展示组件，`App` 负责组装路由和页面；
+- Controller：两个 Hook，负责保存筛选条件和表单内容，并调用 Model（`controller/` 里的 `PlaceOrderCommand` 和 `OrderSubmission` 由它们调用，见 Command 和 State）。
 
 举个例子：在 SearchBar 里输入 → `handleFilterChange` 更新 `filters` → `filterProducts(products, filters)` 算出结果 → 表格重新渲染。
 
@@ -66,7 +66,7 @@ static getInstance() {
 
 ### Decorator
 
-每条验证规则都是一个装饰器，接口都是 `validate(products, draft)`，按需要一层层包起来：
+`OrderItemsValidator` 做最基本的检查，另外三条规则都是装饰器，接口都是 `validate(products, draft)`，按需要一层层包起来：
 
 ```js
 const itemsValidator = new StockValidationDecorator(
