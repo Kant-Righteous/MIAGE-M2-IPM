@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1500" viewBox="0 0 1640 1500" role="img" aria-labelledby="title description">
+  <title id="title">Mini-project 的 MVC 架构与组件端口设计稿</title>
+  <desc id="description">左侧为 Model，中间为共享 Controller，右侧为三个页面。圆圈表示提供接口，半圆表示需要接口，黑方块表示属性，实心三角和空心折角分别表示事件产生与接收。现有商品 JSON 和统计函数使用实线边框，计划组件使用虚线边框。</desc>
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", sans-serif; fill: #17263b; }
+      .title { font-size: 32px; font-weight: 700; }
+      .subtitle { font-size: 17px; fill: #52627a; }
+      .lane { font-size: 17px; font-weight: 700; letter-spacing: 1px; }
+      .component { font-size: 21px; font-weight: 650; }
+      .body { font-size: 16px; }
+      .small { font-size: 14px; fill: #52627a; }
+      .port-label { font-size: 13px; fill: #34445a; }
+      .code { font-family: Consolas, "Microsoft YaHei", monospace; font-size: 16px; }
+      .badge { font-size: 12px; font-weight: 650; }
+      .data-wire { fill: none; stroke: #263c50; stroke-width: 2; stroke-linejoin: round; }
+      .event-wire { fill: none; stroke: #8d4a27; stroke-width: 2; stroke-linejoin: round; }
+      .attribute { fill: #17263b; }
+      .facet { fill: #fff; stroke: #263c50; stroke-width: 2; }
+      .socket { fill: none; stroke: #263c50; stroke-width: 2; }
+      .model-file { fill: #eef5ff; stroke: #3567a4; stroke-width: 1.8; }
+      .planned-model { fill: #eef5ff; stroke: #3567a4; stroke-width: 1.8; stroke-dasharray: 7 5; }
+      .controller { fill: #f3efff; stroke: #7356a5; stroke-width: 1.8; stroke-dasharray: 7 5; }
+      .view { fill: #edf8f6; stroke: #277767; stroke-width: 1.8; stroke-dasharray: 7 5; }
+      .page { fill: #fbfdfd; stroke: #b5d6ce; stroke-width: 1.5; stroke-dasharray: 7 5; }
+      .note { fill: #fff7e6; stroke: #e0c48d; stroke-width: 1; }
+    </style>
+    <symbol id="facet" viewBox="-10 -10 20 20"><circle class="facet" cx="0" cy="0" r="8"/></symbol>
+  </defs>
+
+  <rect width="1640" height="1500" fill="#f6f8fc"/>
+  <text x="48" y="57" class="title">Mini-project · MVC 架构设计稿</text>
+  <text x="48" y="88" class="subtitle">按老师的端口表示法绘制 · 组件边界、数据接口与事件接线</text>
+  <rect x="1400" y="31" width="192" height="37" rx="18" fill="#e9eef8"/>
+  <text x="1496" y="55" text-anchor="middle" class="small">设计稿，随代码更新</text>
+
+  <rect x="40" y="112" width="1560" height="91" rx="13" fill="#fff" stroke="#dce3ed"/>
+  <line x1="65" y1="150" x2="90" y2="150" class="data-wire"/>
+  <circle cx="99" cy="150" r="8" class="facet"/>
+  <text x="121" y="145" class="body">Facet</text>
+  <text x="121" y="168" class="small">提供的接口</text>
+  <path d="M 334 138 A 12 12 0 0 1 334 162 M 346 150 H 371" class="socket"/>
+  <text x="390" y="145" class="body">Receptacle</text>
+  <text x="390" y="168" class="small">需要的接口</text>
+  <line x1="620" y1="150" x2="649" y2="150" class="event-wire"/>
+  <path d="M 643 143 L 655 150 L 643 157 Z" fill="#8d4a27"/>
+  <text x="678" y="145" class="body">Event Source</text>
+  <text x="678" y="168" class="small">产生事件</text>
+  <path d="M 955 138 L 969 150 L 955 162 M 969 150 H 992" class="event-wire"/>
+  <text x="1010" y="145" class="body">Event Sink</text>
+  <text x="1010" y="168" class="small">接收事件</text>
+  <rect x="1280" y="142" width="16" height="16" class="attribute"/>
+  <text x="1319" y="145" class="body">Attribute</text>
+  <text x="1319" y="168" class="small">组件的配置属性</text>
+
+  <text x="53" y="253" class="lane" fill="#3567a4">MODEL · 数据与业务规则</text>
+  <rect x="40" y="275" width="325" height="1050" rx="14" fill="#fff" stroke="#c7d8ed" stroke-width="1.5"/>
+  <text x="62" y="313" class="small">纯数据 / 纯函数模块</text>
+
+  <rect x="62" y="335" width="281" height="135" rx="9" class="model-file"/>
+  <text x="81" y="369" class="component">products.json</text>
+  <rect x="263" y="345" width="65" height="24" rx="12" fill="#d4e5fb"/>
+  <text x="295" y="362" text-anchor="middle" class="badge" fill="#285589">已完成</text>
+  <text x="81" y="405" class="body">18 件商品 · 4 个类别</text>
+  <text x="81" y="437" class="small">初始库存、价格、补货阈值</text>
+
+  <rect x="62" y="505" width="281" height="160" rx="9" class="model-file"/>
+  <text x="81" y="538" class="component">productStats.jsx</text>
+  <text x="81" y="573" class="code">getCategoryStats(products)</text>
+  <text x="81" y="605" class="body">已实现：分组、数量、总库存</text>
+  <text x="81" y="639" class="small" style="fill:#8d6819">待补充：每类平均库存</text>
+
+  <rect x="62" y="735" width="281" height="178" rx="9" class="planned-model"/>
+  <text x="81" y="769" class="component">下单规则</text>
+  <text x="81" y="797" class="small">待实现的 Model 函数</text>
+  <text x="81" y="835" class="body">检查购买数量与可用库存</text>
+  <text x="81" y="866" class="body">生成更新后的库存与订单</text>
+  <text x="81" y="892" class="small">规则：整数、&gt; 0、≤ 当前库存</text>
+
+  <rect x="62" y="961" width="281" height="139" rx="9" class="note"/>
+  <text x="81" y="993" class="body">输入明确的数据参数</text>
+  <text x="81" y="1025" class="body">返回统计、校验或更新结果</text>
+  <text x="81" y="1062" class="small">Model 中不绘制页面、不处理 DOM</text>
+
+  <line x1="77" y1="1166" x2="122" y2="1166" stroke="#3567a4" stroke-width="2"/>
+  <text x="138" y="1171" class="small">实线：文件已存在</text>
+  <line x1="77" y1="1207" x2="122" y2="1207" stroke="#7356a5" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="138" y="1212" class="small">虚线：计划中的组件 / 模块</text>
+  <text x="77" y="1260" class="small">端口名称也是设计稿，尚未全部编码。</text>
+
+  <rect x="405" y="230" width="1195" height="1130" rx="16" fill="#fff" stroke="#ccd6e3" stroke-width="1.5"/>
+  <rect x="425" y="250" width="1155" height="90" rx="11" fill="#f1f4fa" stroke="#d7dfec"/>
+  <text x="449" y="283" class="component">App.jsx · 装配 + React Router 导航</text>
+  <text x="1548" y="282" text-anchor="end" class="small">App 已存在，导航与接线待实现</text>
+  <text x="449" y="315" class="body">Accueil（首页）　 /　 Produits（商品）　 /　 Commande（订单）</text>
+  <text x="440" y="378" class="lane" style="fill:#7356a5">CONTROLLER · 事件与共享状态</text>
+  <text x="947" y="378" class="lane" style="fill:#277767">VIEW · 页面与显示组件</text>
+
+  <rect x="440" y="405" width="345" height="760" rx="11" class="controller"/>
+  <text x="464" y="441" class="component">useShopBehaviour</text>
+  <text x="464" y="469" class="small">待实现的 React Hook</text>
+  <text x="464" y="511" class="body">保存一份共享运行状态</text>
+  <rect x="464" y="527" width="135" height="44" rx="7" fill="#fff" stroke="#d1c7e5"/>
+  <text x="531" y="555" text-anchor="middle" class="code">products</text>
+  <rect x="620" y="527" width="139" height="44" rx="7" fill="#fff" stroke="#d1c7e5"/>
+  <text x="690" y="555" text-anchor="middle" class="code">orders</text>
+  <text x="464" y="617" class="body">从 Model 计算首页统计</text>
+  <text x="464" y="648" class="small">categoryStats / orders.length</text>
+  <text x="464" y="711" class="body">向各页面提供当前数据</text>
+  <text x="464" y="743" class="small">页面共享同一份库存与订单</text>
+  <line x1="464" y1="801" x2="759" y2="801" stroke="#d7cdeb"/>
+  <text x="464" y="839" class="body">处理下单事件</text>
+  <text x="464" y="878" class="small">① 调用 Model 检查并计算结果</text>
+  <text x="464" y="912" class="small">② 成功：更新 products 和 orders</text>
+  <text x="464" y="946" class="small">③ 失败：保留库存，返回错误</text>
+  <text x="464" y="991" class="body">向订单页提供处理结果</text>
+  <text x="464" y="1022" class="small">orderResult</text>
+  <text x="464" y="1090" class="body">接收用户提交的订单草稿</text>
+  <text x="464" y="1132" class="code">placeOrder(draft)</text>
+
+  <path d="M 365 780 H 391" class="data-wire"/>
+  <circle cx="400" cy="780" r="8" class="facet"/>
+  <path d="M 400 768 A 12 12 0 0 1 400 792 M 412 780 H 440" class="socket"/>
+  <text x="398" y="740" text-anchor="middle" class="port-label">Model</text>
+  <text x="398" y="757" text-anchor="middle" class="port-label">API</text>
+
+  <rect x="930" y="405" width="630" height="185" rx="11" class="view"/>
+  <text x="954" y="441" class="component">HomePage · Accueil</text>
+  <text x="1533" y="440" text-anchor="end" class="small">待实现 · 无交互</text>
+  <text x="954" y="488" class="code">categoryStats</text>
+  <text x="1230" y="488" class="body">每类商品数、平均库存</text>
+  <text x="954" y="551" class="code">orderCount</text>
+  <text x="1230" y="551" class="body">已提交的订单数</text>
+
+  <path d="M 785 510 H 874 V 482 H 930" class="data-wire"/>
+  <circle cx="813" cy="510" r="8" class="facet"/>
+  <text x="795" y="473" class="port-label">categoryStats</text>
+  <rect x="923" y="475" width="14" height="14" class="attribute"/>
+  <path d="M 785 565 H 890 V 545 H 930" class="data-wire"/>
+  <circle cx="813" cy="565" r="8" class="facet"/>
+  <text x="795" y="533" class="port-label">orderCount</text>
+  <rect x="923" y="538" width="14" height="14" class="attribute"/>
+
+  <rect x="930" y="620" width="630" height="395" rx="11" class="page"/>
+  <text x="954" y="655" class="component">ProductsPage · Produits</text>
+  <text x="1533" y="654" text-anchor="end" class="small">待实现 · 页面内装配</text>
+
+  <rect x="960" y="700" width="255" height="245" rx="9" class="controller"/>
+  <text x="977" y="732" class="code" style="font-size:15px;font-weight:650">useProductFiltersBehaviour</text>
+  <text x="977" y="760" class="small">商品页自己的筛选状态</text>
+  <text x="977" y="798" class="code">filters</text>
+  <text x="977" y="848" class="code">products</text>
+  <text x="977" y="871" class="small">来自共享库存</text>
+  <text x="977" y="910" class="code">filteredProducts</text>
+
+  <rect x="1290" y="700" width="240" height="115" rx="9" class="view"/>
+  <text x="1308" y="731" class="component">SearchBar</text>
+  <text x="1308" y="766" class="small">name · category · price</text>
+  <text x="1308" y="795" class="small">quantity · restockThreshold</text>
+
+  <path d="M 1290 739 H 1248 V 782 H 1215" class="event-wire"/>
+  <path d="M 1277 732 L 1265 739 L 1277 746 Z" fill="#8d4a27"/>
+  <path d="M 1227 770 L 1215 782 L 1227 794" class="event-wire"/>
+  <text x="1249" y="683" text-anchor="middle" class="port-label" style="fill:#8d4a27">filterChanged</text>
+  <path d="M 1215 822 H 1268 V 787 H 1290" class="data-wire"/>
+  <circle cx="1240" cy="822" r="8" class="facet"/>
+  <rect x="1283" y="780" width="14" height="14" class="attribute"/>
+  <text x="1224" y="849" class="port-label">filters</text>
+
+  <rect x="1290" y="850" width="240" height="70" rx="9" class="view"/>
+  <text x="1308" y="884" class="component">TableProduct</text>
+  <text x="1308" y="906" class="small">显示五个商品属性</text>
+  <path d="M 1215 903 H 1268 V 884 H 1290" class="data-wire"/>
+  <circle cx="1240" cy="903" r="8" class="facet"/>
+  <rect x="1283" y="877" width="14" height="14" class="attribute"/>
+
+  <rect x="1290" y="960" width="240" height="50" rx="7" class="view"/>
+  <text x="1308" y="981" class="component" style="font-size:17px">RowProduct × n</text>
+  <text x="1308" y="1002" class="small" style="font-size:12px">库存低于补货阈值时高亮</text>
+  <path d="M 1410 920 V 960" class="data-wire"/>
+  <circle cx="1410" cy="935" r="7" class="facet"/>
+  <rect x="1403" y="953" width="14" height="14" class="attribute"/>
+  <text x="1432" y="937" class="port-label">map() adapter</text>
+  <text x="1432" y="955" class="port-label">product</text>
+
+  <path d="M 785 690 H 855 V 1163 H 1000 M 855 845 H 960" class="data-wire"/>
+  <circle cx="813" cy="690" r="8" class="facet"/>
+  <text x="795" y="674" class="port-label">products</text>
+  <circle cx="855" cy="845" r="3.5" fill="#263c50"/>
+  <rect x="953" y="838" width="14" height="14" class="attribute"/>
+
+  <rect x="930" y="1045" width="630" height="280" rx="11" class="page"/>
+  <text x="954" y="1079" class="component">OrderPage · Commande</text>
+  <text x="1533" y="1078" text-anchor="end" class="small">待实现 · 页面内装配</text>
+  <rect x="1000" y="1097" width="500" height="208" rx="9" class="view"/>
+  <text x="1020" y="1130" class="component">OrderForm</text>
+  <text x="1290" y="1130" class="small">姓、名、邮箱、商品、数量</text>
+  <rect x="993" y="1156" width="14" height="14" class="attribute"/>
+  <text x="1020" y="1170" class="code">products</text>
+  <text x="1263" y="1170" class="small">商品选择与当前可用库存</text>
+  <rect x="993" y="1203" width="14" height="14" class="attribute"/>
+  <text x="1020" y="1217" class="code">orderResult</text>
+  <text x="1263" y="1217" class="small">显示错误或提交成功</text>
+  <text x="1020" y="1269" class="small">本地保存填写内容；提交时发送订单草稿</text>
+
+  <path d="M 785 1005 H 875 V 1210 H 1000" class="data-wire"/>
+  <circle cx="813" cy="1005" r="8" class="facet"/>
+  <text x="795" y="988" class="port-label">orderResult</text>
+  <path d="M 1000 1270 H 910 V 1128 H 785" class="event-wire"/>
+  <path d="M 980 1263 L 968 1270 L 980 1277 Z" fill="#8d4a27"/>
+  <path d="M 797 1116 L 785 1128 L 797 1140" class="event-wire"/>
+  <text x="908" y="1298" class="port-label" style="fill:#8d4a27">submitOrder(draft)</text>
+
+  <rect x="40" y="1385" width="1560" height="84" rx="11" fill="#eaf0f9"/>
+  <text x="62" y="1417" class="body">MVC：View 产生事件 → Controller 调用 Model → Controller 更新状态 → View 显示结果。</text>
+  <text x="62" y="1448" class="small">JSON 用作初始数据；运行中的库存与订单由 Hook 持有。App 和页面负责接线，转换数据时可作为 adapter。</text>
+</svg>
